@@ -134,82 +134,306 @@ p {
   color: #D41443;
 }
 
+@media screen and (min-width: 768px) {
+  .ice-cream__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-cream__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+
 .ice-cream__item {
-  position: relative;
   border-radius: 24px;
   margin-bottom: 140px;
-  height: 485px;
+}
+
+@media screen and (min-width: 768px) {
+  .ice-cream__item {
+    width: 220px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
 }
 
 .ice-cream {
+  position: relative;
+  padding: 160px 40px 40px;
   background: #FFB8CA;
 }
 
+@media screen and (min-width: 768px) {
+  .ice-cream {
+    padding: 160px 10px 40px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-cream {
+    padding: 160px 10px 40px;
+    width: auto;
+  }
+}
+
+.ice-cream ::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -116px;
+  display: block;
+  margin: 0 auto;
+  background-image: url("./../images/pink_icecream_mob_1x.png");
+  width: 249px;
+  height: 242px;
+  background-position: center;
+  background-size: 249px 242px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .ice-cream ::before {
+    background-image: url("./../images/pink_icecream_mob_2x.png");
+    width: 249px;
+    height: 242px;
+    background-position: center;
+    background-size: 249px 242px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ice-cream ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -116px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("./../images/pink_icecream_tab_1x.png");
+    width: 220px;
+    height: 226px;
+    background-position: center;
+    background-size: 220px 226px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .ice-cream ::before {
+    background-image: url("./../images/pink_icecream_tab_2x.png");
+    width: 220px;
+    height: 226px;
+    background-position: center;
+    background-size: 220px 226px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-cream ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -116px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("./../images/pink_icecream_desct_1x.png");
+    width: 335px;
+    height: 335px;
+    background-position: center;
+    background-size: 335px 335px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .ice-cream ::before {
+    background-image: url("./../images/pink_icecream_desct_2x.png");
+    width: 335px;
+    height: 335px;
+    background-position: center;
+    background-size: 335px 335px;
+  }
+}
+
 .ice-coffee {
+  position: relative;
+  padding: 160px 40px 40px;
   background: #F0D1A5;
 }
 
-.milkshakes {
-  background: #C2E297;
+@media screen and (min-width: 768px) {
+  .ice-coffee {
+    padding: 160px 10px 40px;
+    width: auto;
+  }
 }
 
-.img__pink-ice-cream {
+.ice-coffee ::before {
+  content: '';
   position: absolute;
-  top: -104px;
-  padding: 100px;
+  left: 0;
+  right: 0;
+  top: -116px;
+  display: block;
+  margin: 0 auto;
+  background-image: url("./../images/ice-coffe_mob_1x.png");
   width: 249px;
   height: 242px;
-  background-image: url("./../images/pink_icecream_mob_1x.png");
-  height: auto;
   background-position: center;
-  background-size: top;
-  background-repeat: no-repeat;
+  background-size: 249px 242px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-img {
-    background-image: url("./../images/pink_icecream_mob_2x.png");
-    background-position: center;
-    background-size: top;
-    background-repeat: no-repeat;
-  }
-}
-
-.img__ice-coffee {
-  position: relative;
-  top: -104px;
-  padding: 100px;
-  background-image: url("./../images/ice-coffe_mob_1x.png");
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: top;
-  background-repeat: no-repeat;
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-img {
+  .ice-coffee ::before {
     background-image: url("./../images/ice-coffe_mob_2x.png");
-    width: 100%;
+    width: 249px;
+    height: 242px;
+    background-position: center;
+    background-size: 249px 242px;
   }
 }
 
-.img__milkshakes {
+@media screen and (min-width: 768px) {
+  .ice-coffee ::before ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -116px;
+    display: block;
+    margin: 0 auto;
+    background-image: url("./../images/ice-coffe_tab_1x.png");
+    width: 220px;
+    height: 226px;
+    background-position: center;
+    background-size: 220px 226px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .ice-coffee ::before ::before {
+    background-image: url("./../images/ice-coffe_tab_2x.png");
+    width: 220px;
+    height: 226px;
+    background-position: center;
+    background-size: 220px 226px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-coffee ::before {
+    background-image: url("./../images/ice-coffe_desct_1x.png");
+    width: 335px;
+    height: 335px;
+    background-position: center;
+    background-size: 249px 242px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .ice-coffee ::before {
+    background-image: url("./../images/ice-coffe_desct_2x.png");
+    width: 335px;
+    height: 335px;
+    background-position: center;
+    background-size: 335px 335px;
+  }
+}
+
+.milkshakes {
   position: relative;
-  top: -104px;
-  padding: 100px;
+  padding: 160px 40px 40px;
+  background: #FFB8CA;
+}
+
+@media screen and (min-width: 768px) {
+  .milkshakes {
+    padding: 160px 10px 40px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .milkshakes {
+    padding: 160px 10px 40px;
+    width: auto;
+  }
+}
+
+.milkshakes ::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -116px;
+  display: block;
+  margin: 0 auto;
   background-image: url("./../images/milkshakes_mob_1x.png");
-  width: 100%;
-  height: auto;
+  width: 249px;
+  height: 242px;
   background-position: center;
-  background-size: top;
-  background-repeat: no-repeat;
+  background-size: 249px 242px;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-img {
+  .milkshakes ::before {
     background-image: url("./../images/milkshakes_mob_2x.png");
-    width: 100%;
+    width: 249px;
+    height: 242px;
+    background-position: center;
+    background-size: 249px 242px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .milkshakes {
+    background-image: url("./../images/milkshakes_tab_1x.png");
+    width: 220px;
+    height: 226px;
+    background-position: center;
+    background-size: 220px 226px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .milkshakes {
+    background-image: url("./../images/milkshakes_tab_2x.png");
+    width: 220px;
+    height: 226px;
+    background-position: center;
+    background-size: 220px 226px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .milkshakes {
+    background-image: url("./../images/milkshakes_desct_1x.png");
+    width: 335px;
+    height: 335px;
+    background-position: center;
+    background-size: 335px 335px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .milkshakes {
+    background-image: url("./../images/milkshakes_desct_2x.png");
+    width: 335px;
+    height: 335px;
+    background-position: center;
+    background-size: 335px 335px;
   }
 }
 
@@ -226,27 +450,17 @@ p {
   color: #FFFFFF;
 }
 
-.round {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 4px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.round__item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.ice-cream__item__name ::after {
+  content: '';
+  position: absolute;
+  background-image: url("./../images/Ellipse 5.png"), url("./../images/Ellipse 5.png"), url("./../images/Ellipse 5.png");
+  background-size: 6px 6px;
   width: 6px;
   height: 6px;
-  background: white;
-  border-radius: 50%;
 }
 
 .ice-cream__item__info {
-  padding: 30px 40px;
+  padding: 30px 0;
   font-family: DM Sans, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
