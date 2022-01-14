@@ -4,8 +4,6 @@
 // доп шрифт:
 // font-family: 'Titan One', cursive;
 
-//
-
 body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
@@ -16,11 +14,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-/* Прячит чекбокс */
-.visualy-hidden {
-  appearance: none;
 }
 
 /* reset */
@@ -41,4 +34,5 @@ button {
 img {
   display: block;
   height: auto;
+  width: 100%;
 }
