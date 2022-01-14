@@ -1,0 +1,28 @@
+// Основные цвета на макете:
+
+// цвет фона, текста - #D41443, #FFFFFF, #000000
+
+// доп. цвет фона, текста #FFA5BA, #FFF5F6, #907E82 accentColor: ECEBEB
+
+// Основные цвета фона и текста:
+$mainColor: #ffffff;
+$secondaryColor: #d41443;
+$textColor: #000000;
+
+// hover
+$accentColor: #ecebeb;
+
+// Доп. цвета фона и текста:
+$pinkColor: #ffa5ba;
+$greyColor: #907e82;
+
+// доп. шрифт
+$secondaryFont: 'Titan One', cursive;
+
+// анимация
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+// breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1280px;
