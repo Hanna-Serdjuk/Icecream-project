@@ -3,14 +3,14 @@
   font-family: $secondaryFont;
   font-weight: 400;
   font-size: $fontSizeTitle;
-  line-height: $lineHeightMain;
+  line-height: $lineHeightTitle;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $mainColor;
 }
 .title--red {
   font-size: $fontSizeTitleAccent;
-  line-height: $lineHeightMainAccent;
+  line-height: $lineHeightTitleAccent;
   color: $secondaryColor;
 }
 
