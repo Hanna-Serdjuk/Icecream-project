@@ -1,0 +1,51 @@
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  font-family: inherit;
+
+  padding: 10px 32px;
+  min-width: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 20px;
+
+  transition: background-color 250ms $cubic;
+}
+
+.arrow {
+  margin-left: 8px;
+  text-align: center;
+}
+
+.arrow:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+}
+.button--red {
+  background: $secondaryColor;
+  color: $mainColor;
+
+  &:hover,
+  &:focus {
+    background: $accentColorSecond;
+  }
+}
+.button--white {
+  background: $mainColor;
+  color: $secondaryColor;
+
+  &:hover,
+  &:focus {
+    background: $accentColor;
+  }
+}
