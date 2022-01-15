@@ -28,18 +28,12 @@ $tablet: 768px;
 $desktop: 1280px;
 
 //  Шрифты заголовков:
-$fontSizeMain: calc(22px + (24 - 22) * ((100vw - 320px) / (480 - 320)));
+$fontSizeMain: calc(26px - (26 - 22) * ((100vw - 320px) / (768 - 320)));
 @media screen and (min-width: $desktop) {
   $fontSizeMain: 38px;
-}
-@media screen and (min-width: $tablet) {
-  $fontSizeMain: 26px;
 }
 
 $lineHeightMain: calc(1.13 - (1.15 - 1.13) * ((100vw - 768px) / (768 - 320)));
 @media screen and (min-width: $desktop) {
   $lineHeightMain: 1.16;
-}
-@media screen and (min-width: $tablet) {
-  $lineHeightMain: 26px;
 }
