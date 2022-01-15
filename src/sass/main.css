@@ -141,6 +141,9 @@ p {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 
@@ -151,6 +154,9 @@ p {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 
@@ -170,7 +176,7 @@ p {
 
 .ice-cream {
   position: relative;
-  padding: 160px 40px 40px;
+  padding: 160px 44px 40px;
   background: #FFB8CA;
 }
 
@@ -188,7 +194,7 @@ p {
   }
 }
 
-.ice-cream ::before {
+.ice-cream::before {
   content: '';
   position: absolute;
   left: 0;
@@ -204,7 +210,7 @@ p {
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .ice-cream ::before {
+  .ice-cream::before {
     background-image: url("./../images/pink_icecream_mob_2x.png");
     width: 249px;
     height: 242px;
@@ -214,7 +220,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .ice-cream ::before {
+  .ice-cream::before {
     content: '';
     position: absolute;
     left: 0;
@@ -231,7 +237,7 @@ p {
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .ice-cream ::before {
+  .ice-cream::before {
     background-image: url("./../images/pink_icecream_tab_2x.png");
     width: 220px;
     height: 226px;
@@ -241,7 +247,7 @@ p {
 }
 
 @media screen and (min-width: 1280px) {
-  .ice-cream ::before {
+  .ice-cream::before {
     content: '';
     position: absolute;
     left: 0;
@@ -258,7 +264,7 @@ p {
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .ice-cream ::before {
+  .ice-cream::before {
     background-image: url("./../images/pink_icecream_desct_2x.png");
     width: 335px;
     height: 335px;
@@ -269,7 +275,7 @@ p {
 
 .ice-coffee {
   position: relative;
-  padding: 160px 40px 40px;
+  padding: 160px 44px 40px;
   background: #F0D1A5;
 }
 
@@ -280,7 +286,14 @@ p {
   }
 }
 
-.ice-coffee ::before {
+@media screen and (min-width: 1280px) {
+  .ice-coffee {
+    padding: 160px 10px 40px;
+    width: auto;
+  }
+}
+
+.ice-coffee::before {
   content: '';
   position: absolute;
   left: 0;
@@ -296,7 +309,7 @@ p {
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .ice-coffee ::before {
+  .ice-coffee::before {
     background-image: url("./../images/ice-coffe_mob_2x.png");
     width: 249px;
     height: 242px;
@@ -306,7 +319,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .ice-coffee ::before ::before {
+  .ice-coffee::before::before {
     content: '';
     position: absolute;
     left: 0;
@@ -323,7 +336,7 @@ p {
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .ice-coffee ::before ::before {
+  .ice-coffee::before::before {
     background-image: url("./../images/ice-coffe_tab_2x.png");
     width: 220px;
     height: 226px;
@@ -333,7 +346,14 @@ p {
 }
 
 @media screen and (min-width: 1280px) {
-  .ice-coffee ::before {
+  .ice-coffee::before::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -116px;
+    display: block;
+    margin: 0 auto;
     background-image: url("./../images/ice-coffe_desct_1x.png");
     width: 335px;
     height: 335px;
@@ -343,7 +363,7 @@ p {
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .ice-coffee ::before {
+  .ice-coffee::before::before {
     background-image: url("./../images/ice-coffe_desct_2x.png");
     width: 335px;
     height: 335px;
@@ -354,8 +374,8 @@ p {
 
 .milkshakes {
   position: relative;
-  padding: 160px 40px 40px;
-  background: #FFB8CA;
+  padding: 160px 44px 40px;
+  background: #C2E297;
 }
 
 @media screen and (min-width: 768px) {
@@ -365,14 +385,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .milkshakes {
-    padding: 160px 10px 40px;
-    width: auto;
-  }
-}
-
-.milkshakes ::before {
+.milkshakes::before {
   content: '';
   position: absolute;
   left: 0;
@@ -388,7 +401,7 @@ p {
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .milkshakes ::before {
+  .milkshakes::before {
     background-image: url("./../images/milkshakes_mob_2x.png");
     width: 249px;
     height: 242px;
@@ -398,7 +411,14 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .milkshakes {
+  .milkshakes::before::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -116px;
+    display: block;
+    margin: 0 auto;
     background-image: url("./../images/milkshakes_tab_1x.png");
     width: 220px;
     height: 226px;
@@ -408,7 +428,7 @@ p {
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .milkshakes {
+  .milkshakes::before::before {
     background-image: url("./../images/milkshakes_tab_2x.png");
     width: 220px;
     height: 226px;
@@ -418,17 +438,24 @@ p {
 }
 
 @media screen and (min-width: 1280px) {
-  .milkshakes {
+  .milkshakes::before::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -116px;
+    display: block;
+    margin: 0 auto;
     background-image: url("./../images/milkshakes_desct_1x.png");
     width: 335px;
     height: 335px;
     background-position: center;
-    background-size: 335px 335px;
+    background-size: 249px 242px;
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .milkshakes {
+  .milkshakes::before::before {
     background-image: url("./../images/milkshakes_desct_2x.png");
     width: 335px;
     height: 335px;
@@ -443,20 +470,23 @@ p {
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
-  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-.ice-cream__item__name ::after {
-  content: '';
+.ice-cream__item__name::after {
+  content: '...';
   position: absolute;
-  background-image: url("./../images/Ellipse 5.png"), url("./../images/Ellipse 5.png"), url("./../images/Ellipse 5.png");
-  background-size: 6px 6px;
   width: 6px;
   height: 6px;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
 .ice-cream__item__info {
@@ -471,11 +501,27 @@ p {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .ice-cream__item__info {
+    padding: 33px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ice-cream__item__info {
+    padding: 35px 0 62px;
+  }
+}
+
 .ice-cream__button {
   width: 40px;
   height: 40px;
   background: white;
   border-radius: 50%;
   border: none;
+}
+
+.right_arrow {
+  fill: #D41443;
 }
 /*# sourceMappingURL=main.css.map */

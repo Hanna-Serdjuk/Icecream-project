@@ -37,12 +37,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
+        align-items: stretch;
 
     }
     @media screen and (min-width:1280px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
+        align-items: stretch;
 
     }
 }
@@ -60,23 +62,22 @@
 
 
 .ice-cream {
-        position: relative;
-        padding: 160px 40px 40px;
-        background: #FFB8CA;
-    
+            position: relative;
+    padding: 160px 44px 40px;
+    background: #FFB8CA;
 
-            @media screen and (min-width:768px) {
-                padding: 160px 10px 40px;
-                width: auto;
+    @media screen and (min-width:768px) {
+        padding: 160px 10px 40px;
+        width: auto;
 
-            }
+    }
 
-            @media screen and (min-width:1280px) {
-                padding: 160px 10px 40px;
-                width: auto;
+    @media screen and (min-width:1280px) {
+        padding: 160px 10px 40px;
+        width: auto;
 
-            }
-    ::before {
+    }
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -103,7 +104,7 @@
     }
 
     @media screen and (min-width:768px) {
-        ::before {
+        &::before {
             content: '';
             position: absolute;
             left: 0;
@@ -130,7 +131,7 @@
     }
 
     @media screen and (min-width:1280px) {
-        ::before {
+        &::before {
             content: '';
             position: absolute;
             left: 0;
@@ -159,7 +160,7 @@
 
 .ice-coffee{
     position: relative;
-    padding: 160px 40px 40px;
+    padding: 160px 44px 40px;
     background: #F0D1A5;
 
     @media screen and (min-width:768px) {
@@ -173,7 +174,7 @@
         width: auto;
 
     }
-    ::before {
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -198,7 +199,7 @@
             }
         
         @media screen and (min-width:768px) {
-            ::before {
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -226,7 +227,7 @@
         
     
         @media screen and (min-width:1280px) {
-            ::before {
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -256,7 +257,7 @@
 }
 .milkshakes{
     position: relative;
-    padding: 160px 40px 40px;
+    padding: 160px 44px 40px;
     background: #C2E297;
 
     @media screen and (min-width:768px) {
@@ -264,7 +265,7 @@
         width: auto;
 
     }
-    ::before {
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -289,7 +290,7 @@
             }
         
         @media screen and (min-width:768px) {
-            ::before {
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -317,7 +318,7 @@
         
     
         @media screen and (min-width:1280px) {
-            ::before {
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -347,26 +348,28 @@
 }
 
 .ice-cream__item__name {
+    &::after{
+        content: '...';
+        position: absolute;
+        width:6px;
+        height: 6px;
+        color: white;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        left: 0 ;
+        right: 0;
+    }
     font-family: Titan One;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 30px;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #FFFFFF;
-    ::after{
-        content: '';
-        position: absolute;
-        background-image: url('./../images/Ellipse\ 5.png'), url('./../images/Ellipse\ 5.png'), url('./../images/Ellipse\ 5.png');
-        background-size: 6px 6px;
-        width: 6px;
-        height: 6px;
-
-    }
 }
 
 
@@ -382,6 +385,16 @@
     letter-spacing: 0.04em;
 
     color: #FFFFFF;
+
+    @media screen and (min-width:768px) {
+        padding:33px 0 40px ;
+
+    }
+    @media screen and (min-width:1280px) {
+        padding:35px 0 62px ;
+    }
+
+   
 }
 
 .ice-cream__button {
@@ -390,4 +403,9 @@
     background: white;
     border-radius: 50%;
     border: none;
+   
+}
+
+.right_arrow {
+    fill: #D41443;
 }
