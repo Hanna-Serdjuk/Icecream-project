@@ -1,0 +1,10 @@
+// Заголовок h1 title
+.title {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: $fontSizeMain;
+  line-height: $lineHeightMain;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $mainColor;
+}
