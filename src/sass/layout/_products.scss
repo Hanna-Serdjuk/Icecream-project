@@ -17,17 +17,9 @@
 
 }
 
-.section-products__title {
-    font-family: 'Titan One',Arial,sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+.section-title--position{
     margin-bottom: 144px;
-
-    color: #D41443;
+    text-align: center;
 
     @media screen and (min-width:768px) {
         margin-bottom: 144px;
@@ -439,8 +431,7 @@
 
 .right_arrow {
     fill: #D41443;
-    position: relative;
-    top: -2px;
+    
 }
 
 
