@@ -46,7 +46,7 @@ $fontSizeTitleAccent: calc(26px - (48 - 34) * ((100vw - 320px) / (768 - 320)));
   $fontSizeTitleAccent: 58px;
 }
 
-$lineHeightTitleAccent: calc(0.92 - 0.03 * (100vw / 1280));
+$lineHeightTitleAccent: calc(0.91 - (0.96 - 0.91) * ((100vw - 768px) / (768 - 320)));
 @media screen and (min-width: $desktop) {
   $lineHeightTitleAccent: 0.89;
 }
@@ -56,7 +56,7 @@ $fontSizeSectionTitle: calc(34px + (48 - 34) * ((100vw - 320px) / (768 - 320)));
   $fontSizeSectionTitle: 58px;
 }
 
-$lineHeightSectionTitle: calc(1.16 - 0.03 * (100vw / 1280));
+$lineHeightSectionTitle: calc(1.14 - (1.15 - 1.14) * ((100vw - 768px) / (768 - 320)));
 @media screen and (min-width: $desktop) {
   $lineHeightSectionTitle: 1.13;
 }
