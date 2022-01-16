@@ -65,12 +65,11 @@ $letterSpSectionTitle: 0.04em;
   $letterSpSectionTitle: 0.06em;
 }
 // шрифты карточек Card секции Contacts
-$fontSizeCard: 16px;
+$fontSizeCard: calc(12px + (16 - 12) * (100vw / 1280));
 
-@media screen and (max-width: 450px) {
-  $fontSizeCard: calc(12px + (16 - 12) * ((100vw - 320px) / (480 - 320)));
-}
-
-@media screen and (min-width: $tablet) {
+@media screen and (max-width: $tablet) {
   $fontSizeCard: 14px;
+}
+@media screen and (min-width: $desktop) {
+  $fontSizeCard: 16px;
 }
