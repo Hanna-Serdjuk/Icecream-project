@@ -1,0 +1,79 @@
+.about {
+  padding-top: 125px;
+  outline: 1px solid red;
+  background-color: $contrastBgColor;
+  position: relative;
+}
+
+.about-pre__title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.about-container::before {
+  content: '';
+  display: block;
+
+  width: 280px;
+  height: 279px;
+
+  background-image: url(../images/about/cow-mob.png);
+  background-size: 280px 279px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/cow-mob2x.png);
+  }
+}
+
+.about-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about-content {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+    margin-left: 17px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.about-content__text {
+  position: relative;
+  z-index: 1;
+
+  @include font('DM Sans', 500, 14px, 1.76);
+  color: $greyColor;
+
+  &:first-child {
+    color: #000000;
+    margin-bottom: 35px;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 17px;
+  }
+}
+
+.about-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-milk {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+}
