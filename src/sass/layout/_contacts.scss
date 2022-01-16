@@ -1,0 +1,139 @@
+.contacts-wrapp {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+    padding-top: 120px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 100px;
+    padding-top: 132px;
+  }
+}
+.contacts__list {
+  margin: -20px;
+  margin-bottom: 55px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin: -10px;
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    margin: -15px;
+    margin-bottom: 85px;
+  }
+}
+.card {
+  margin: 20px auto;
+  width: 220px;
+  background: $mainColor;
+  box-shadow: 0px 8px 30px $shadowColor;
+  border-radius: 24px;
+  padding: 20px 43px;
+  @media screen and (min-width: $mobile) {
+    padding: 46px 25px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 10px;
+    padding: 50px 31px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 330px;
+    padding: 51px 43px;
+    margin: 15px;
+  }
+}
+.card__item {
+  padding-right: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  background: #f0d1a5;
+  border-radius: 6px;
+  margin-bottom: 32px;
+}
+
+.card__item--green {
+  background: #c2e297;
+}
+.card__title {
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $mainColor;
+}
+.card__subtitle {
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: $textColor;
+}
+.card__text {
+  font-size: 12px;
+  line-height: 1.5;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+  }
+  margin-top: 10px;
+
+  margin-bottom: 32px;
+
+  color: $greyColor;
+}
+.card__subtitle--pink {
+  color: $pinkColor;
+  letter-spacing: normal;
+}
+.card__list {
+  width: 100%;
+
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 31px;
+    padding-top: 31px;
+    margin-bottom: 31px;
+  }
+}
+.card__point:first-child {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
+  margin-bottom: 10px;
+}
+
+.contacts__link {
+  line-height: 1.5;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+
+  color: $greyColor;
+}
