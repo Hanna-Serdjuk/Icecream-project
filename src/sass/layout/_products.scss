@@ -25,7 +25,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 144px;
+    
 
     color: #D41443;
 
@@ -42,6 +42,17 @@
     }
 }
 
+.products-title {
+    margin-bottom: 140px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        margin-bottom: 140px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 220px;
+    }
+
+}
 
 
 .products-list {
@@ -439,8 +450,7 @@
 
 .right_arrow {
     fill: #D41443;
-    position: relative;
-    top: -2px;
+    vertical-align: middle;
 }
 
 
