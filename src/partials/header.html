@@ -1,55 +1,73 @@
 <header class="site-header header">
-    <div class="header-wrap header-nav conteiner">
-        <a href="" class="header-wrap--link">
-            <img class="header-wrap--img" srcset="./images/site-header/logo.png 1x, ./images/site-header/logo.png 2x" src="./images/site-header/logo.png"
+    <nav class="header-nav conteiner">
+        <div class="header__logo-div">
+            <a href="" class="header__link">
+            <img class="header__logo"  src="./images/favicon/favicon.png"
                 alt="company logo"></a>
-        <ul class="list header-menu">
-            <li class="header-menu-item item">
-                <a href="#hero" class="header-menu-link link">Home</a>
+                <p class="header__company-name">icecream</p>
+                </div>
+        <ul class="list header-nav__list header-nav__list--desktop">
+            <li class="header-nav__item item">
+                <a href="#hero" class="header-nav__link link">Home</a>
             </li>
-            <li class="header-menu-item item">
-                <a href="#advantage" class="header-menu-link link">About us</a>
+            <li class="header-nav__item item">
+                <a href="#advantage" class="header-nav__link link">About us</a>
             </li>
-            <li class="header-menu-item item">
-                <a href="#about us" class="header-menu-link link">How it’s made?</a>
+            <li class="header-nav__item item">
+                <a href="#about us" class="header-nav__link link">How it’s made?</a>
             </li>
-            <li class="header-menu-item item">
-                <a href="#products" class="header-menu-link link">Our products</a>
+            <li class="header-nav__item item">
+                <a href="#products" class="header-nav__link link">Our products</a>
             </li>
-            <li class="header-menu-item item">
-                <a href="#contacts" class="header-menu-link link">Contact</a>
+            <li class="header-nav__item item">
+                <a href="#contacts" class="header-nav__link link">Contact</a>
             </li>
         </ul>
-        <button class="header-wrap--btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+        <div class="header-btn-wrap">
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
             type="button">0
             <!-- <svg width="20" height="12">
                 <use href="images/svg/icons.svg#icon-burger"></use>
             </svg> -->
         </button>
-        <button class="header-menu-btn header-btn button button--white">Buy now
+        <button class="button header-btn button--white">Buy now
             <!-- <svg class="header-btn__icon" width="10" height="10">
                 <use href="images/svg/icons.svg#icon-vector"></use>
             </svg> -->
-        </button>
+        </button></div>
+    </nav>
 
-    </div>
-    <div class="mob-menu menu-container js-menu-container" id="mobile-menu">
+<!-- Mobile menu -->
+
+    <div class="mobile-backdrop">
+    <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">X
             <!-- <svg width="20" height="20">
                 <use href="images/svg/icons.svg#icon-close"></use>
             </svg> -->
         </button>
-        <button class="header-menu-btn">Buy now
+        <button class="button button--white button--menu mobile-menu-btn">Buy now
             <!-- <svg width="10" height="10">
                 <use href="images/svg/icons.svg#icon-vector"></use>
             </svg> -->
         </button>
-        <ul class="mob-menu-list list header-menu">
-            <li class="mob-menu-item item">Home</li>
-            <li class="mob-menu-item item">About us</li>
-            <li class="mob-menu-item item">How it’s made?</li>
-            <li class="mob-menu-item item">Our products</li>
-            <li class="mob-menu-item item">Contact</li>
+        <ul class="mob-menu list header-menu">
+            <li class="mob-menu__item item item">
+                <a href="#hero" class="mob-menu__link link">Home</a>
+            </li>
+            <li class="mob-menu__item item item">
+                <a href="#advantage" class="mob-menu__link link">About us</a>
+            </li>
+            <li class="mob-menu__item item item">
+                <a href="#about us" class="mob-menu__link link">How it’s made?</a>
+            </li>
+            <li class="mob-menu__item item item">
+                <a href="#products" class="mob-menu__link link">Our products</a>
+            </li>
+            <li class="mob-menu__item item item">
+                <a href="#contacts" class="mob-menu__link link">Contact</a>
+            </li>
         </ul>
     </div>
+</div>
 </header>
