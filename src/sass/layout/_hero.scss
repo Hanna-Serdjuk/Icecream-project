@@ -1,0 +1,59 @@
+.hero-container {
+  background: $herobg;
+}
+
+.hero-title {
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $mainColor;
+}
+
+.hero-title-another {
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.84;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondaryColor;
+}
+
+.hero__btn-prod {
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $mainColor;
+  background-color: $secondaryColor;
+
+  padding: 10px 32px;
+  min-width: 160px;
+
+  border: none;
+  border-radius: 20px;
+
+  transition: 250ms $cubic;
+}
+
+.hero__btn-made {
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $secondaryColor;
+  background-color: $mainColor;
+
+  padding: 10px 32px;
+  min-width: 160px;
+
+  border: none;
+  border-radius: 20px;
+
+  transition: background-color 250ms $cubic;
+}

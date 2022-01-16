@@ -1,0 +1,22 @@
+<section class="container hero-container">
+  <h2 class="hero__title">ice cream made with <span class="hero__title-another">passion</span></h2>
+  <ul class="hero__list-btn">
+    <li><button type="button" class="hero__btn-prod">Products</button></li>
+    <li><button type="button" class="hero__btn-made">How it’s made?</button></li>
+  </ul>
+  <picture>
+    <source
+      srcset="/src/images/hero/ice-pc-1x.png 1x, /src/images/hero/ice-pc-2x.png 2x"
+      media="(min-width: $desktop)"
+    />
+    <source
+      srcset="/src/images/hero/ice-tab-1x.png 1x, /src/images/hero/ice-tab-2x.png 2x"
+      media="(min-width: $tablet)"
+    />
+    <source
+      srcset="/src/images/hero/ice-mob-1x.png 1x, /src/images/hero/ice-mob-2x.png 2x"
+      media="(min-width: 320px)"
+    />
+    <img src="/src/images/hero/ice-pc-2x.png" alt="icecream" />
+  </picture>
+</section>
