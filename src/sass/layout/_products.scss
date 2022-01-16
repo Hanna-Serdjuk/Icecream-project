@@ -4,9 +4,8 @@
 
 
 .section-products__info{
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'Titan One',Arial,sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 
@@ -20,7 +19,7 @@
 
 .section-products__title {
     display: block;
-    font-family: Titan One, Arial, sans-serif;
+    font-family: 'Titan One',Arial,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
@@ -71,7 +70,7 @@
     background: #FFB8CA;
 
     @media screen and (min-width:768px) {
-        padding: 110px 10px 40px;
+        padding: 150px 10px 40px;
         width: auto;
 
     }
@@ -140,7 +139,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: -150px;
+            top: -211px;
             display: block;
             margin: 0 auto;
         background-image: url('./../images/products/pink_icecream_desct_1x.png');
@@ -169,7 +168,7 @@
     ;
 
     @media screen and (min-width:768px) {
-        padding: 110px 10px 40px;
+        padding: 150px 10px 40px;
         width: auto;
 
     }
@@ -238,7 +237,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: -151px;
+            top: -211px;
             display: block;
             margin: 0 auto;
         background-image: url('./../images/products/ice-coffe_desct_1x.png');
@@ -267,7 +266,7 @@
     background: #C2E297;
 
     @media screen and (min-width:768px) {
-        padding: 110px 10px 40px;
+        padding: 150px 10px 40px;
         width: auto;
 
     }
@@ -336,7 +335,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: -150px;
+            top: -211px;
             display: block;
             margin: 0 auto;
         background-image: url('./../images/products/milkshakes_desct_1x.png');
@@ -370,16 +369,16 @@
         text-align: center;
         left: 0 ;
         right: 0;
+
         @media screen and (min-width:768px) {
-            top: 145px;
-        }
-        @media screen and (min-width:768px) {
+            top: 188px;
+        }   
+        @media screen and (min-width:1280px) {
             top: 225px;
         }
     }
     font-family: Titan One, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -427,4 +426,27 @@
 
 .right_arrow {
     fill: #D41443;
+    position: relative;
+    top: 2px;
 }
+
+
+.products-overlay {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(101%);
+    .products-list__item__button:hover & {
+        transform: translateY(0);
+        display: block;
+      }
+
+      .products-list__item__button:focus & {
+        transform: translateY(0);
+      }
+  }
