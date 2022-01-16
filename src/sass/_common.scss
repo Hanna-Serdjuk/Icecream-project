@@ -1,0 +1,32 @@
+
+
+::-webkit-input-placeholder {color:#c0392b; margin-left: 10px}
+::-moz-placeholder          {color:#c0392b;}/* Firefox 19+ */
+:-moz-placeholder           {color:#c0392b;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#c0392b;}
+
+
+
+.container {
+  padding: 0 10px;
+    @media screen and (min-width:480px){
+        width: 480px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    @media screen and (min-width:768px){
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+      @media screen and (min-width:1200px){
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+  }
+  
+
+  
+
+  
