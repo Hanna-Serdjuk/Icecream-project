@@ -37,7 +37,7 @@ $fontSizeTitle: calc(26px - (26 - 22) * ((100vw - 320px) / (768 - 320)));
   $fontSizeTitle: 38px;
 }
 
-$lineHeightTitle: calc(1.13 + (1.16 - 1.13) * (100vw / 1280));
+$lineHeightTitle: calc(1.13 - (1.15 - 1.13) * ((100vw - 768px) / (768 - 320)));
 @media screen and (min-width: $desktop) {
   $lineHeightTitle: 1.16;
 }
