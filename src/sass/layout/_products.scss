@@ -20,21 +20,33 @@
 .section-products__title {
     display: block;
     font-family: 'Titan One',Arial,sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 34px;
     line-height: 39px;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 180px;
+    margin-bottom: 144px;
 
     color: #D41443;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 144px;
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-bottom: 260px;
+        font-size: 58px;
+        line-height: 66px;
+    }
 }
 
 
 
 .products-list {
+    list-style: none;
     
     @media screen and (min-width:768px) {
         display: grid;
@@ -63,7 +75,7 @@
     }
 }
 
-
+// =======================img========================
 .pink-ice-cream {
             position: relative;
     padding: 160px 20px 40px;
@@ -230,6 +242,7 @@
         }
     }
 
+
     @media screen and (min-width:1280px) {
         &::before {
             content: '';
@@ -358,26 +371,8 @@
 }
 
 
-.products-list__title {
-    &::after{
-        content: '...';
-        position: absolute;
-        width:6px;
-        height: 6px;
-        color: white;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        left: 0 ;
-        right: 0;
 
-        @media screen and (min-width:768px) {
-            top: 188px;
-        }   
-        @media screen and (min-width:1280px) {
-            top: 225px;
-        }
-    }
+.products-list__title {
     font-family: 'Titan One', Arial, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -389,30 +384,48 @@
     color: #FFFFFF;
 }
 
+//===================points======================
+
+.products-list__points {
+    
+        &::after{
+        content: '...';
+        color: white;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 20px;
+        padding: 20px 0;
+}
+}
+
 
 .products-list__info {
-    padding: 40px 0;
-    font-family: 'M Sans', Arial, sans-serif;
+    padding: 0px 20px;
+    font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 152%;
+    line-height: 28px;
 
     text-align: center;
     letter-spacing: 0.04em;
 
     color: #FFFFFF;
 
+    margin-bottom: 30px;
     @media screen and (min-width:768px) {
-        padding:66px 0 40px ;
-
+        margin-bottom: 30px;
     }
     @media screen and (min-width:1280px) {
-        padding:66px 0 62px ;
+        margin-bottom: 60px;
+        
     }
-
    
 }
+
+//==================button===============
 
 .products-list__button {
     display: block;
@@ -428,7 +441,7 @@
 .right_arrow {
     fill: #D41443;
     position: relative;
-    top: 2px;
+    top: -2px;
 }
 
 
