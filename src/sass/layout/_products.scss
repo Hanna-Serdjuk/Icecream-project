@@ -3,18 +3,10 @@
 }
 
 
-.section-products__info{
-    font-family: 'Titan One',Arial,sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+.pre-title-products{
 
     text-align: center;
-    text-transform: uppercase;
-
-    color: #FFA5BA;
     margin-bottom: 15px;
-
 }
 
 .section-products__title {
@@ -25,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 144px;
+    
 
     color: #D41443;
 
@@ -42,23 +34,34 @@
     }
 }
 
+.products-title {
+    margin-bottom: 140px;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        margin-bottom: 140px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 220px;
+    }
+
+}
 
 
 .products-list {
     list-style: none;
     
     @media screen and (min-width:768px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
+        display: flex;
+        gap: 20px;
         align-items: stretch;
+        justify-content: center;
 
     }
     @media screen and (min-width:1280px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
+        display: flex;
+        gap: 30px;
         align-items: stretch;
+        justify-content: center;
 
     }
 }
@@ -72,6 +75,9 @@
         width: 220px;
         height: max-content;
     }
+    @media screen and (min-width:1280px) {
+        width: 329px;
+    }
 }
 
 // =======================img========================
@@ -82,13 +88,11 @@
 
     @media screen and (min-width:768px) {
         padding: 150px 10px 40px;
-        width: auto;
 
     }
 
     @media screen and (min-width:1280px) {
         padding: 190px 44px 40px;
-        width: auto;
 
     }
     &::before {
@@ -179,13 +183,11 @@
 
     @media screen and (min-width:768px) {
         padding: 150px 10px 40px;
-        width: auto;
 
     }
 
     @media screen and (min-width:1280px) {
         padding: 190px 44px 40px;
-        width: auto;
 
     }
     &::before {
@@ -279,13 +281,11 @@
 
     @media screen and (min-width:768px) {
         padding: 150px 10px 40px;
-        width: auto;
 
     }
 
     @media screen and (min-width:1280px) {
         padding: 190px 44px 40px;
-        width: auto;
 
     }
     &::before {
@@ -439,8 +439,7 @@
 
 .right_arrow {
     fill: #D41443;
-    position: relative;
-    top: -2px;
+    vertical-align: middle;
 }
 
 
