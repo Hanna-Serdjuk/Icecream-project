@@ -1,0 +1,26 @@
+// Заголовок h1 title
+.title {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: $fontSizeTitle;
+  line-height: $lineHeightTitle;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $mainColor;
+}
+.title--red {
+  font-size: $fontSizeTitleAccent;
+  line-height: $lineHeightTitleAccent;
+  color: $secondaryColor;
+}
+
+// Заголовок h2
+.section__title {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: $fontSizeSectionTitle;
+  line-height: $lineHeightSectionTitle;
+  letter-spacing: $letterSpSectionTitle;
+  text-transform: uppercase;
+  color: $secondaryColor;
+}
