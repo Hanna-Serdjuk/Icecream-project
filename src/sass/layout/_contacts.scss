@@ -152,3 +152,30 @@
 
   color: $greyColor;
 }
+
+.contacts-bnt {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contacts-bnt__item {
+  display: flex;
+  justify-content: center;
+}
+.contacts-section {
+  background-image: linear-gradient(to bottom, $mainColor 10%, $contrastBgColor 10%);
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    linear-gradient: (to bottom, $mainColor 15%, $contrastBgColor 15%);
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to bottom, $mainColor 25%, $contrastBgColor 25%);
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to bottom, $mainColor 25%, $contrastBgColor 25%);
+  }
+}
