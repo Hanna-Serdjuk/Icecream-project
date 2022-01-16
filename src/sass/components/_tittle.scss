@@ -15,7 +15,7 @@
 }
 
 // Заголовок h2
-.section__title {
+.section-title {
   font-family: $secondaryFont;
   font-weight: 400;
   font-size: $fontSizeSectionTitle;
@@ -23,4 +23,23 @@
   letter-spacing: $letterSpSectionTitle;
   text-transform: uppercase;
   color: $secondaryColor;
+}
+.pre-title {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  font-size: $fontSizeLbTitle;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $pinkColor;
+  @media screen and (min-width: $tablet) {
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+.pre-title--spacing {
+  letter-spacing: 0.04em;
 }
