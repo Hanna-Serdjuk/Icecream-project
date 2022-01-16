@@ -7,8 +7,15 @@
   padding-bottom: 43px;
 
   @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
     padding-top: 65px;
     padding-bottom: 91px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 85px;
+    padding-right: 85px;
   }
 }
 
