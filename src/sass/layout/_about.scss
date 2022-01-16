@@ -5,20 +5,14 @@
   position: relative;
 }
 
-.about-pre__title,
-.about__title {
-  text-align: center;
-}
-
 .about-pre__title {
-  @include font($secondaryFont, 400, 18px, 1.16);
-  text-transform: uppercase;
-  color: $pinkColor;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .about__title {
   margin-bottom: 26px;
+  text-align: center;
 }
 
 .about-container::before {
