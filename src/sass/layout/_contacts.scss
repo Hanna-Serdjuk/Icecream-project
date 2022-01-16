@@ -45,7 +45,7 @@
 
   @media screen and (min-width: $desktop) {
     width: 330px;
-    padding: 51px 44px;
+    padding: 51px 43px;
     margin: 15px;
   }
 }
@@ -79,8 +79,6 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $textColor;
-
-  margin-bottom: 10px;
 }
 .card__text {
   font-size: 12px;
@@ -95,13 +93,15 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
   }
+  margin-top: 10px;
 
   margin-bottom: 32px;
 
   color: $greyColor;
 }
-.card-subtitle--pink {
+.card__subtitle--pink {
   color: $pinkColor;
+  letter-spacing: normal;
 }
 .card__list {
   width: 100%;
@@ -119,7 +119,7 @@
 }
 .card__point:first-child {
   @media screen and (min-width: $tablet) {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   margin-bottom: 10px;
