@@ -87,6 +87,13 @@
   border-radius: 50%;
   color: $mainColor;
   background-color: #fea5bb;
+
+  transition: background-color $durationTime $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $secondaryColor;
+  }
 }
 
 .footer-contact {
