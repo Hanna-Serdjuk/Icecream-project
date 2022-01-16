@@ -1,12 +1,24 @@
-
 .header {
     width: 100%;
     background-color: $pinkColor;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 6px;
-
 }
+
+.header-conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 20px 10px;
+
+    max-width: $mobile;
+
+    @media screen and (min-width: $tablet){
+        padding: 37px 34px;
+        max-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 37px 115px 34px 46px;
+        max-width: $desktop;
+}}
 
 .header-nav {
     position: relative;
@@ -24,16 +36,21 @@
     align-items: center;
     justify-content: center;
 }
-
+.header__logo {
+    width: 50px;
+}
 .header__company-name {
     margin-left: 20px;
     font-family: $secondaryFont;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.2;
     color: $secondaryColor;
     text-transform: uppercase;
 
+    @media screen and (min-width: $tablet) {
+        font-size: 30px;
+}
 }
 
 .header-btn {
@@ -47,6 +64,9 @@
 
     @media screen and (max-width: 767px) {
     display: none;
+}
+    @media screen and (min-width: $desktop) {
+    margin-left: 0;
 }
 }
 
@@ -113,7 +133,11 @@
     }
 
     @media screen and (min-width: $tablet) {
-        width: 30vw;
+        width: 35vw;
+    }
+
+    @media screen and (min-width: 1190px) {
+        width: 36vw;
     }
 
     @media screen and (min-width: $desktop) {
