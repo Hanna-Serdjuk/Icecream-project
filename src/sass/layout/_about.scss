@@ -1,50 +1,48 @@
 .about {
   padding-top: 125px;
   outline: 1px solid red;
-  background-color: $fonSection;
+  background-color: $contrastBgColor;
   position: relative;
 }
 
-.about-header {
+.about-pre__title,
+.about__title {
   text-align: center;
 }
 
-.about-text {
+.about-pre__title {
   @include font($secondaryFont, 400, 18px, 1.16);
   text-transform: uppercase;
   color: $pinkColor;
-}
-
-.about-text_margin {
   margin-bottom: 15px;
 }
 
-.about-title {
-  @include font($secondaryFont, 400, 34px, 1.14);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: $secondaryColor;
-}
-
-.about-title_margin {
+.about__title {
   margin-bottom: 26px;
 }
 
-.about-text__list::before {
+.about-container::before {
   content: '';
-  display: flex;
-  background: url(../images/cow-mob.png);
+  display: block;
+
   width: 280px;
   height: 279px;
+
+  background-image: url(../images/about/cow-mob.png);
+  background-size: 280px 279px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/cow-mob2x.png);
+  }
 }
 
-.about-text__list {
+.about-container {
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
 
-.about-text__item {
+.about-content {
   @media screen and (min-width: $tablet) {
     width: 50%;
     margin-left: 17px;
@@ -56,9 +54,32 @@
   }
 }
 
-.about-moloko {
+.about-content__text {
+  position: relative;
+  z-index: 1;
+
+  @include font('DM Sans', 500, 14px, 1.76);
+  color: $greyColor;
+
+  &:first-child {
+    color: #000000;
+    margin-bottom: 35px;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 17px;
+  }
+}
+
+.about-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-milk {
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
   left: 0;
   width: 100%;
 }
