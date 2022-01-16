@@ -1,0 +1,64 @@
+.about {
+  padding-top: 125px;
+  outline: 1px solid red;
+  background-color: $fonSection;
+  position: relative;
+}
+
+.about-header {
+  text-align: center;
+}
+
+.about-text {
+  @include font($secondaryFont, 400, 18px, 1.16);
+  text-transform: uppercase;
+  color: $pinkColor;
+}
+
+.about-text_margin {
+  margin-bottom: 15px;
+}
+
+.about-title {
+  @include font($secondaryFont, 400, 34px, 1.14);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $secondaryColor;
+}
+
+.about-title_margin {
+  margin-bottom: 26px;
+}
+
+.about-text__list::before {
+  content: '';
+  display: flex;
+  background: url(../images/cow-mob.png);
+  width: 280px;
+  height: 279px;
+}
+
+.about-text__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about-text__item {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+    margin-left: 17px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.about-moloko {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
