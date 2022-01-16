@@ -87,6 +87,11 @@
   border-radius: 50%;
   color: $mainColor;
   background-color: #fea5bb;
+
+  &:hover,
+  &:focus {
+    background-color: $secondaryColor;
+  }
 }
 
 .footer-contact {
