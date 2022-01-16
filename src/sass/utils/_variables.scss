@@ -36,7 +36,7 @@ $fontSizeTitle: calc(26px - (26 - 22) * ((100vw - 320px) / (768 - 320)));
   $fontSizeTitle: 38px;
 }
 
-$lineHeightTitle: calc(1.13 - (1.15 - 1.13) * ((100vw - 768px) / (768 - 320)));
+$lineHeightTitle: calc(1.13 + (1.16 - 1.13) * (100vw / 1280));
 @media screen and (min-width: $desktop) {
   $lineHeightTitle: 1.16;
 }
@@ -45,7 +45,7 @@ $fontSizeTitleAccent: calc(26px - (48 - 34) * ((100vw - 320px) / (768 - 320)));
   $fontSizeTitleAccent: 58px;
 }
 
-$lineHeightTitleAccent: calc(0.91 - (0.96 - 0.91) * ((100vw - 768px) / (768 - 320)));
+$lineHeightTitleAccent: calc(0.92 - 0.03 * (100vw / 1280));
 @media screen and (min-width: $desktop) {
   $lineHeightTitleAccent: 0.89;
 }
@@ -55,7 +55,7 @@ $fontSizeSectionTitle: calc(34px + (48 - 34) * ((100vw - 320px) / (768 - 320)));
   $fontSizeSectionTitle: 58px;
 }
 
-$lineHeightSectionTitle: calc(1.14 - (1.15 - 1.14) * ((100vw - 768px) / (768 - 320)));
+$lineHeightSectionTitle: calc(1.16 - 0.03 * (100vw / 1280));
 @media screen and (min-width: $desktop) {
   $lineHeightSectionTitle: 1.13;
 }
@@ -65,12 +65,11 @@ $letterSpSectionTitle: 0.04em;
   $letterSpSectionTitle: 0.06em;
 }
 // шрифты карточек Card секции Contacts
-$fontSizeCard: 16px;
-
-@media screen and (max-width: 450px) {
-  $fontSizeCard: calc(12px + (16 - 12) * ((100vw - 320px) / (480 - 320)));
-}
+$fontSizeCard: calc(12px + (16 - 12) * (100vw / 1280));
 
 @media screen and (min-width: $tablet) {
   $fontSizeCard: 14px;
+}
+@media screen and (min-width: $desktop) {
+  $fontSizeCard: 16px;
 }
