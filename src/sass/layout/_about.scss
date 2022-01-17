@@ -1,8 +1,19 @@
 .about {
+  max-width: 1600px;
   padding-top: 125px;
   outline: 1px solid red;
   background-color: $contrastBgColor;
-  position: relative;
+
+  @media screen and(max-width:767px) {
+    background-image: url(../images/about/milk-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 93%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-mob2x.png);
+    }
+  }
 }
 
 .about-pre__title {
@@ -13,11 +24,15 @@
 .about__title {
   margin-bottom: 26px;
   text-align: center;
+
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 50px;
+  }
 }
 
 .about-container::before {
   content: '';
-  display: block;
+  display: flex;
 
   width: 280px;
   height: 279px;
@@ -28,31 +43,43 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/cow-mob2x.png);
   }
+
+  @media screen and(min-width:$tablet) {
+    width: 340px;
+    height: 339px;
+
+    background-image: url(../images/about/cow-tab.png);
+    background-size: 340px 339px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/cow-tab2x.png);
+    }
+  }
 }
 
 .about-container {
   @media screen and (min-width: $tablet) {
     display: flex;
   }
+
+  margin-left: -17px;
 }
 
 .about-content {
   @media screen and (min-width: $tablet) {
     width: 50%;
     margin-left: 17px;
+    padding-top: 50px;
   }
 
   @media screen and (max-width: 767px) {
-    padding-left: 30px;
+    padding-left: 47px;
     padding-right: 30px;
   }
 }
 
 .about-content__text {
-  position: relative;
-  z-index: 1;
-
-  @include font('DM Sans', 500, 14px, 1.76);
+  @include font('DM Sans', 500, 12px, 1.62);
   color: $greyColor;
 
   &:first-child {
@@ -63,17 +90,20 @@
   &:nth-last-child(-n + 3) {
     margin-bottom: 17px;
   }
+
+  @media screen and(min-width:$tablet) {
+    @include font('DM Sans', 500, 14px, 1.76);
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .about-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-milk {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
-  width: 100%;
+  @media screen and(max-width:767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
