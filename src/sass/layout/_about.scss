@@ -1,8 +1,19 @@
 .about {
+  max-width: 1600px;
   padding-top: 125px;
   outline: 1px solid red;
   background-color: $contrastBgColor;
-  position: relative;
+
+  @media screen and(max-width:767px) {
+    background-image: url(../images/about/milk-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 93%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-mob2x.png);
+    }
+  }
 }
 
 .about-pre__title {
@@ -49,10 +60,7 @@
 }
 
 .about-content__text {
-  position: relative;
-  z-index: 1;
-
-  @include font('DM Sans', 500, 14px, 1.76);
+  @include font('DM Sans', 500, 12px, 1.62);
   color: $greyColor;
 
   &:first-child {
@@ -69,11 +77,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.about-milk {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
-  width: 100%;
 }
