@@ -11,12 +11,18 @@
   }
 }
 .contacts__list {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: -20px;
   margin-bottom: 80px;
 
   @media screen and (min-width: $desktop) {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    transform: translateY(-75%);
+
     display: flex;
     justify-content: center;
     margin: -15px;
@@ -162,6 +168,9 @@
     align-items: center;
     justify-content: center;
   }
+  @media screen and (min-width: 1280px) {
+    margin-top: 200px;
+  }
 }
 .contacts-bnt__item {
   display: flex;
@@ -179,13 +188,22 @@
     background-image: linear-gradient(to bottom, $mainColor 25%, $contrastBgColor 25%);
   }
 }
-
 .contacts {
-  background-image: url('/images/contacts/sectionbg1.png');
+  display: block;
+}
+.contacts-bg {
+  @media screen and (min-width: $desktop) {
+    transform: translateY(170px);
+    max-width: 1600px;
+    min-height: 382px;
+    background-position: 50% 170px;
+    background-image: url('/images/contacts/sectionbg1.png');
 
-  background-repeat: no-repeat;
-  object-position: 10% center;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('/images/contacts/sectionbg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/contacts/sectionbg2.png');
+    }
   }
 }
