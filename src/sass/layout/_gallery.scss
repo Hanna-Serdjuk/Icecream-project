@@ -1,14 +1,14 @@
-.gallery{
-    background:  linear-gradient(to top, $mainColor 74%, $contrastBgColor 31%);
-    padding-bottom: 80px;       
-    @media screen and (min-width: $tablet){
-        padding-bottom: 121px;
-        background:  linear-gradient(to top, $mainColor 73.2%, $contrastBgColor 30%);        
-    }
-    @media screen and (min-width: $desktop){
-        padding-bottom: 123px;
-        background:  linear-gradient(to top, $mainColor 69.5%, $contrastBgColor 31%);
-    }        
+.gallery {
+  background: linear-gradient(to top, $mainColor 74%, $contrastBgColor 31%);
+  padding-bottom: 80px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 121px;
+    background: linear-gradient(to top, $mainColor 73.2%, $contrastBgColor 30%);
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 123px;
+    background: linear-gradient(to top, $mainColor 69.5%, $contrastBgColor 31%);
+  }
 }
 <<<<<<< Updated upstream
 =======
@@ -22,9 +22,8 @@
 
 >>>>>>> Stashed changes
 
-
-.gallery-pic{    
-    background-size: cover; 
-    padding-left: 0;
-    padding-right: 0;
+.gallery-pic {
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
 }

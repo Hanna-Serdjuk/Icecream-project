@@ -3,7 +3,10 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 29px;
+  margin-bottom: 29px;
+}
+.customer-item {
+  border-radius: 44px;
 }
 .reviews__content {
   background-color: rgba(225, 225, 225, 0.1);
@@ -49,14 +52,22 @@
 }
 .reviews__address {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .reviews__title {
   font-size: 14px;
 }
+@media screen and(min-width: 480px) {
+  .reviews__text {
+    max-width: 350px;
+  }
+  .reviews__content {
+    height: 200px;
+  }
+}
 @media screen and(min-width:$tablet) {
   .swiper {
-    padding-bottom: 19px;
+    margin-bottom: 19px;
   }
   .reviews__text {
     max-width: 480px;
@@ -84,7 +95,7 @@
 }
 @media screen and(min-width:$desktop) {
   .swiper {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   .reviews__text {
     max-width: 750px;
