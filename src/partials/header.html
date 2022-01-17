@@ -30,7 +30,7 @@
                 <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
         </button>
-        <button class="button header-btn button--white">Buy now <span class="arrow"></span>
+        <button class="button header-btn button--white" data-modal-open>Buy now <span class="arrow"></span>
         </button>
     </div>
     </nav>
@@ -44,7 +44,7 @@
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button>
-        <button class="button button--white button--menu mobile-menu-btn">Buy now <span class="arrow arrow--mobile"></span>
+        <button class="button button--white button--menu mobile-menu-btn" data-modal-open>Buy now <span class="arrow arrow--mobile"></span>
         </button>
         <ul class="mob-menu list header-menu">
             <li class="mob-menu__item item item">
@@ -63,6 +63,42 @@
                 <a href="#contacts" class="mob-menu__link link">Contact</a>
             </li>
         </ul>
+    </div>
+</div>
+
+<!-- Modal window -->
+
+<div class="blackdrop is-hidden" data-modal>
+    <div class="modal">
+        <button data-modal-close class="modal__btn">
+            <svg width="20" height="20">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="modal-form" action="user_form" autocomplete="off">
+            <div class="modal-head">
+            <img class="modal-logo" src="./images/favicon/favicon.png" alt="company logo">
+            <p class="modal-title">Order form</p>
+        </div>
+            <div class="modal-list">
+                <label class="modal-list__label" for="name">Full Name</label>
+                <input class="modal-list__input" type="text" id="name" placeholder="John Smith">
+            </div>
+            <div class="modal-list">
+                <label class="modal-list__label" for="tel">Phone</label>
+                <input class="modal-list__input" type="tel" id="tel">
+            </div>
+            <div class="modal-list">
+                <label class="modal-list__label" for="comment">Your order</label>
+                <textarea class="modal-list__textarea" name="comment" id="comment" rows="5"
+                    placeholder="Type your order here"></textarea>
+            </div>
+            <div class="modal-chekbox">
+                <label class="modal-chekbox__label" for="chekbox">Confirm your order</label>
+                    <input type="checkbox" name="hobby"/>        
+            </div>
+            <button class="button button--red" type="submit">Send</button>
+        </form>
     </div>
 </div>
 </header>
