@@ -121,7 +121,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 70vw;
+    width: 80vw;
     height: 100vh;
     padding: 20px;
     background-color: #E17992;
@@ -130,11 +130,11 @@
     line-height: 1.29;
 
     @media screen and (min-width: $mobile) {
-        width: 50vw;
+        width: 40vw;
     }
 
     @media screen and (min-width: $tablet) {
-        width: 40vw;
+        // width: 40vw;
     }
 
     @media screen and (min-width: $desktop) {
@@ -172,11 +172,7 @@
 .mobile-menu-btn {
     margin: 0 auto;
     margin-bottom: 32px;
-    width: 100%;
-
-    @media screen and (min-width: 1000px) {
-        width: 80%;
-    }
+    max-width: 209px;
 }
 
 
