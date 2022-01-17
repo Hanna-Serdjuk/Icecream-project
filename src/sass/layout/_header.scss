@@ -121,7 +121,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 70vw;
+    width: 80vw;
     height: 100vh;
     padding: 20px;
     background-color: #E17992;
@@ -130,11 +130,11 @@
     line-height: 1.29;
 
     @media screen and (min-width: $mobile) {
-        width: 50vw;
+        width: 40vw;
     }
 
     @media screen and (min-width: $tablet) {
-        width: 40vw;
+        // width: 40vw;
     }
 
     @media screen and (min-width: $desktop) {
@@ -172,11 +172,7 @@
 .mobile-menu-btn {
     margin: 0 auto;
     margin-bottom: 32px;
-    width: 100%;
-
-    @media screen and (min-width: 1000px) {
-        width: 80%;
-    }
+    max-width: 209px;
 }
 
 
@@ -207,4 +203,167 @@
     &:focus {
         color: $secondaryColor;
     }
+}
+
+// Modal window
+
+.blackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(192, 98, 129,0.6);
+
+    opacity: 1;
+    transition: opacity 250ms $cubic;
+    z-index: 2;
+}
+
+.blackdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.blackdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0.5);
+
+}
+
+.modal {
+    position: absolute;
+    max-width: 300px;
+    height: 80vh;
+    border-radius: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(1);
+    transition: transform 250ms $cubic;
+    padding: 20px 40px;
+    
+    background-image: linear-gradient(
+    to bottom, #E17992, #dfcacf);
+
+    box-shadow: 7px 8px 13px 12px rgba(217,174,197,0.34);
+-webkit-box-shadow: 7px 8px 13px 12px rgba(217,174,197,0.34);
+-moz-box-shadow: 7px 8px 13px 12px rgba(217,174,197,0.34);
+
+    @media screen and (min-width: $mobile) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: 400px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 560px;
+    }
+}
+
+.modal__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin-top: 8px;
+    margin-right: 8px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+// Modal form
+
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-head {
+    display: flex;
+    align-items: center;
+}
+
+.modal-logo {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.15;
+    color: $mainColor;
+}
+
+
+.modal-list__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $mainColor;
+    margin-bottom: 4px;
+}
+
+.modal-list__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 36px;
+    transition: border 250ms $cubic;
+    padding: 10px;
+
+    &:focus {
+    outline: none;
+    border: 1px solid rgb(190, 94, 110);
+}
+}
+.modal-list__textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+
+    padding: 10px;
+    border-radius: 4px;
+    transition: border 250ms $cubic;
+
+    &:focus {
+    outline: none;
+    border: 1px solid rgb(190, 94, 110);
+}}
+
+.modal-list [placeholder] {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal-chekbox {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: $mainColor;
+    font-size: 14px;
+}
+.modal-chekbox input {
+    margin-left: 15px;
 }
