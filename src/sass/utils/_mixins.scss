@@ -5,9 +5,3 @@
   line-height: $ln;
 }
 
-@mixin font($fw, $fs, $lh, $ls) {
-  font-weight: $fw;
-  font-size: $fs;
-  line-height: $lh;
-  letter-spacing: $ls;
-}
