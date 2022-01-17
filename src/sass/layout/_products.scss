@@ -367,25 +367,39 @@
 }
 
 .products-list__info__mobile {
-    @media screen and (min-width:768px) {
-        display: none;
-    }
-}
-
-.products-list__info {
-    padding: 0px 20px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 176%;
+    line-height: 152%;
+    padding: 14px 0 30px;
 
     text-align: center;
     letter-spacing: 0.04em;
 
     color: #FFFFFF;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
 
-    margin-bottom: 30px;
+
+
+.products-list__info {
+    font-family: DM Sans;
+font-weight: bold;
+font-size: 14px;
+line-height: 176%;
+
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
     @media screen and (min-width:768px) {
         margin-bottom: 30px;
         font-size: 14px;
