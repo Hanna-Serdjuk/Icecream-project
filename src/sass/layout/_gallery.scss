@@ -1,0 +1,49 @@
+.gallery{
+    padding-bottom: 80px;    
+    background:  linear-gradient(to bottom, $contrastBgColor 1% , $mainColor 99%) ;
+    @media screen and (min-width: $tablet){
+        padding-bottom: 121px;        
+    }
+    @media screen and (min-width: $desktop){
+        padding-bottom: 123px;
+    }
+        
+}
+.gallery-pic{
+    
+    background-size: cover; 
+    background-image: url(../images/gallery/gal-pic-mob.jpg);
+    width: 364px;
+    height: 122px;
+    align-items: center;
+    
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {      
+        background-image: url(../images/gallery/gal-pic-mob-2x.jpg);
+    }   
+    
+   
+    @media screen and (min-width: $tablet){
+        background-image: url(../images/gallery/gal-pic-tablet.jpg);
+        width: 768px;
+        height: 264px;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {      
+            background-image: url(../images/gallery/gal-pic-tablet-2x.jpg);}
+    }
+    @media screen and (min-width: $desktop){
+        background-image: url(../images/gallery/gal-pic.jpg) ;
+        width: 1280px;
+        height: 430px;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {      
+            background-image:  url(../images/gallery/gal-pic-2x.jpg);}
+
+
+    }
+}
+
