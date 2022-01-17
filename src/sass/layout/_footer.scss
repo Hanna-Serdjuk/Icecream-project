@@ -14,8 +14,8 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 114px;
+    padding-right: 121px;
   }
 }
 
@@ -32,21 +32,19 @@
 }
 
 .footer__text {
-  font-family: Titan One;
-  font-size: 18px;
+  font-family: $secondaryFont;
+  font-size: $fontSizeLbTitle;
   line-height: 1.17;
   text-transform: uppercase;
 
   color: $pinkColor;
 
   @media screen and (min-width: $tablet) {
-    font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 30px;
     line-height: 1.13;
   }
 }
