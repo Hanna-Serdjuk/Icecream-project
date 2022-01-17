@@ -54,9 +54,9 @@
    }
     @media screen and (min-width:768px) {
         width: 220px;
-        height: max-content;
         padding: 150px 10px 40px;
         margin-bottom: 0;
+
     }
     @media screen and (min-width:1280px) {
         width: 335px;
@@ -68,7 +68,6 @@
 
 // =======================img========================
 .pink-ice-cream {
-           
     background: #FFB8CA;
     &::before {
         content: '';
