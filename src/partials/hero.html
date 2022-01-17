@@ -1,22 +1,89 @@
 <section class="container hero-container">
-  <h2 class="hero__title">ice cream made with <span class="hero__title-another">passion</span></h2>
-  <ul class="hero__list-btn">
-    <li><button type="button" class="hero__btn-prod">Products</button></li>
-    <li><button type="button" class="hero__btn-made">How it’s made?</button></li>
+  <!-- <h2 class="hero__title">ice cream made with <span class="hero__title-another">passion</span></h2> -->
+  <ul class="hero__title-list list">
+    <li>
+      <p class="title">ice cream</p>
+    </li>
+    <li>
+      <p class="title">made with</p>
+    </li>
+    <li>
+      <p class="section__title">passion</p>
+    </li>
   </ul>
-  <picture>
-    <source
-      srcset="/images/hero/ice-pc-1x.png 1x, /images/hero/ice-pc-2x.png 2x"
-      media="(min-width: $desktop)"
-    />
-    <source
-      srcset="/images/hero/ice-tab-1x.png 1x, /images/hero/ice-tab-2x.png 2x"
-      media="(min-width: $tablet)"
-    />
-    <source
-      srcset="/images/hero/ice-mob-1x.png 1x, /images/hero/ice-mob-2x.png 2x"
-      media="(min-width: 320px)"
-    />
-    <img src="/images/hero/ice-pc-2x.png" alt="icecream" />
-  </picture>
+  <ul class="hero__list-btn list">
+    <li class="hero__item">
+      <a class="link" href="#products">
+        <button type="button" class="button--red hero__btn-prod">Products</button>
+      </a>
+    </li>
+    <li class="hero__item">
+      <a class="link" href="">
+        <button type="button" class="button--white hero__btn-made">How it’s made?</button>
+      </a>
+    </li>
+  </ul>
+
+  <div class="hero__ice-pict">
+    <picture>
+      <source
+        srcset="/images/hero/ice-pc-1x.png 1x, /images/hero/ice-pc-2x.png 2x"
+        media="(min-width: $desktop)"
+      />
+      <source
+        srcset="/images/hero/ice-tab-1x.png 1x, /images/hero/ice-tab-2x.png 2x"
+        media="(min-width: $tablet)"
+      />
+      <source
+        srcset="/images/hero/ice-mob-1x.png 1x, /images/hero/ice-mob-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/images/hero/ice-pc-2x.png" alt="icecream" />
+    </picture>
+  </div>
+  <div class="hero__milk-container">
+    <div class="hero__milk-pict">
+      <picture>
+        <source
+          srcset="/images/hero/milk-pc-1x.png 1x, /images/hero/milk-pc-2x.png 2x"
+          media="(min-width: $desktop)"
+        />
+        <source
+          srcset="/images/hero/milk-tab-1x.png 1x, /images/hero/milk-tab-2x.png 2x"
+          media="(min-width: $tablet)"
+        />
+        <img src="/images/hero/milk-pc-2x.png" alt="icecream" />
+      </picture>
+    </div>
+    <div>
+      <p class="hero__milk-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button type="button"></button>
+    </div>
+  </div>
+  <div class="hero__girl-pict">
+    <picture>
+      <source
+        srcset="/images/hero/girl-pc-1x.png 1x, /images/hero/girl-pc-2x.png 2x"
+        media="(min-width: $desktop)"
+      />
+      <source
+        srcset="/images/hero/girl-tab-1x.png 1x, /images/hero/girl-tab-2x.png 2x"
+        media="(min-width: $tablet)"
+      />
+      <img src="/images/hero/girl-pc-2x.png" alt="icecream" />
+    </picture>
+  </div>
+  <ul class="list hero__inf">
+    <li>
+      <p class="hero__inf-number">16</p>
+      <p class="hero__inf-text">cafes</p>
+    </li>
+    <li>
+      <p class="hero__inf-number">23</p>
+      <p class="hero__inf-text">food trucks</p>
+    </li>
+  </ul>
 </section>

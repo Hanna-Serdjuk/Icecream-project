@@ -1,23 +1,61 @@
-.hero-container {
-  background: $herobg;
+.hero {
+  &-container {
+    background: $herobg;
+    width: 100%;
+    height: 502px;
+    position: relative;
+
+    @media screen and (min-width: $tablet) {
+      height: 399px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 625px;
+    }
+  }
+
+  &__title-list {
+    position: absolute;
+    z-index: 10;
+    top: 193px;
+    left: 20px;
+
+    @media screen and (min-width: $tablet) {
+      top: 102px;
+      left: 14px;
+    }
+  }
 }
 
-.hero-title {
-  font-family: Titan One;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $mainColor;
-}
+// .hero__title-text {
+//   font-family: Titan One;
+//   font-size: 26px;
+//   line-height: 1.15;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: $mainColor;
+//   z-index: 10;
+// }
 
-.hero-title-another {
-  font-family: Titan One;
-  font-size: 26px;
-  line-height: 1.84;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $secondaryColor;
+// .hero__title-another {
+//   font-family: Titan One;
+//   font-size: 36px;
+//   line-height: 1.84;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: $secondaryColor;
+// }
+
+.hero__list-btn {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 312px;
+  left: 20px;
+
+  @media screen and (min-width: $tablet) {
+    top: 202px;
+    left: 14px;
+  }
 }
 
 .hero__btn-prod {
@@ -30,8 +68,9 @@
   color: $mainColor;
   background-color: $secondaryColor;
 
-  padding: 10px 32px;
-  min-width: 160px;
+  padding: 10px 25px;
+
+  margin-right: 8px;
 
   border: none;
   border-radius: 20px;
@@ -49,11 +88,190 @@
   color: $secondaryColor;
   background-color: $mainColor;
 
-  padding: 10px 32px;
-  min-width: 160px;
+  padding: 10px 25px;
+  //   width: 83px;
+  //   height: 24px;
 
   border: none;
   border-radius: 20px;
 
   transition: background-color 250ms $cubic;
+}
+
+.hero__ice-pict {
+  // margin-top: 36px;
+  //   margin-right: 12px;
+  padding-top: 92px;
+  margin: 0 40% 0 35%;
+  width: 171px;
+  height: 410px;
+  display: flex;
+  // justify-content: center;
+  // position: absolute;
+  z-index: 5;
+
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 56px;
+    // padding-bottom: 30px;
+    width: 143px;
+    height: 336px;
+    margin-left: 358px;
+  }
+
+  picture {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 346px;
+      height: 346px;
+      border-radius: 50%;
+      background: $pinkColor;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(calc(-50% + 13px), -50%);
+
+      @media screen and (min-width: $tablet) {
+        width: 324px;
+        height: 324px;
+        transform: translate(calc(-50% + 39px), -50%);
+      }
+    }
+  }
+}
+
+.hero__milk-pict {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    position: relative;
+    width: 124px;
+    height: 126px;
+  }
+}
+
+.hero__milk-container {
+  display: none;
+  width: 330px;
+  left: 34px;
+  bottom: 28px;
+  align-items: end;
+  grid-template-columns: max-content auto;
+  position: absolute;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+  }
+}
+
+.hero__milk-text {
+  font-family: DM Sans;
+  width: 114px;
+  height: 48px;
+
+  font-size: 8px;
+  line-height: 150%;
+  color: $mainColor;
+  & + button {
+    display: block;
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    border: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+    }
+
+    &::before {
+      width: 30%;
+      height: 1px;
+      background-color: $secondaryColor;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      width: 4px;
+      height: 4px;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-color: $secondaryColor;
+      left: 65%;
+      transform: translate(-100%, -50%) rotate(45deg);
+    }
+  }
+}
+
+.hero__girl-pict {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    position: absolute;
+    width: 168px;
+    height: 133px;
+    right: 34px;
+    bottom: 0px;
+    z-index: 6;
+  }
+}
+
+.hero__inf {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    position: absolute;
+    top: 96px;
+    right: 44px;
+    gap: 15px;
+  }
+  li {
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #fff;
+      top: 0;
+      right: 0;
+      transform: translate(30%, -25%);
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}
+
+.hero__inf-number {
+  font-family: Titan One;
+
+  font-size: 28px;
+  line-height: 1.14;
+
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $secondaryColor;
+}
+
+.hero__inf-text {
+  font-family: DM Sans;
+
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+
+  color: $mainColor;
 }
