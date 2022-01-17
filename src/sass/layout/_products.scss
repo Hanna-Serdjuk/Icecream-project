@@ -4,36 +4,12 @@
 
 
 .pre-title-products{
-
+    font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
-}
-
-.section-products__title {
-    font-family: 'Titan One',Arial,sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     
 
-    color: #D41443;
-
-    @media screen and (min-width:768px) {
-        margin-bottom: 144px;
-        font-size: 48px;
-        line-height: 55px;
-    }
-
-    @media screen and (min-width:1280px) {
-        margin-bottom: 260px;
-        font-size: 58px;
-        line-height: 66px;
-    }
 }
-
 .products-title {
     margin-bottom: 140px;
     text-align: center;
@@ -51,15 +27,16 @@
     list-style: none;
     
     @media screen and (min-width:768px) {
-        display: flex;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: stretch;
         justify-content: center;
+        grid-gap: 30px;
 
     }
     @media screen and (min-width:1280px) {
         display: flex;
-        gap: 30px;
+    
         align-items: stretch;
         justify-content: center;
 
@@ -69,32 +46,33 @@
 
 
 .products-list__item{
+    
+    // margin: 15px;
+    position: relative;
+    padding: 160px 20px 40px;
     border-radius: 24px;
     margin-bottom: 140px;
+   &:last-child{
+       margin-bottom: -15px;
+   }
     @media screen and (min-width:768px) {
         width: 220px;
-        height: max-content;
+        // padding: 150px 10px 40px;
+        margin-bottom: 0;
     }
     @media screen and (min-width:1280px) {
         width: 329px;
+        height: 525px;
+        padding: 165px 20px 40px;
+        margin-bottom: 0;
+       
     }
 }
 
 // =======================img========================
 .pink-ice-cream {
-            position: relative;
-    padding: 160px 20px 40px;
+           
     background: #FFB8CA;
-
-    @media screen and (min-width:768px) {
-        padding: 150px 10px 40px;
-
-    }
-
-    @media screen and (min-width:1280px) {
-        padding: 190px 44px 40px;
-
-    }
     &::before {
         content: '';
         position: absolute;
@@ -177,19 +155,9 @@
 }
 
 .ice-coffee{
-    position: relative;
-    padding: 160px 20px 40px;
+   
     background: #F0D1A5;
 
-    @media screen and (min-width:768px) {
-        padding: 150px 10px 40px;
-
-    }
-
-    @media screen and (min-width:1280px) {
-        padding: 190px 44px 40px;
-
-    }
     &::before {
         content: '';
         position: absolute;
@@ -278,14 +246,15 @@
     padding: 160px 20px 40px;
     background: #C2E297;
 
-
     @media screen and (min-width:768px) {
         padding: 150px 10px 40px;
+        height: max-content;
 
     }
 
     @media screen and (min-width:1280px) {
-        padding: 190px 44px 40px;
+        padding: 164px 20px 40px;
+                height: max-content;
 
     }
     &::before {
@@ -375,12 +344,15 @@
     font-family: 'Titan One', Arial, sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1,15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: #FFFFFF;
+    @media screen and (min-width:1280px) {
+        font-size: 30px;
+    }
 }
 
 //===================points======================
@@ -393,12 +365,17 @@
         display: block;
         margin: 0 auto;
         text-align: center;
-        letter-spacing: 4px;
-        font-size: 20px;
-        padding: 20px 0;
+        letter-spacing: 1px;
+        font-size: 38px;
+        padding: 2px 0;
 }
 }
 
+.products-list__info__mobile {
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
 
 .products-list__info {
     padding: 0px 20px;
@@ -406,7 +383,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 176%;
 
     text-align: center;
     letter-spacing: 0.04em;
@@ -416,9 +393,13 @@
     margin-bottom: 30px;
     @media screen and (min-width:768px) {
         margin-bottom: 30px;
+        font-size: 16px;
+
     }
     @media screen and (min-width:1280px) {
         margin-bottom: 60px;
+        font-size: 16px;
+        padding: 21px 20px 0;
         
     }
    
