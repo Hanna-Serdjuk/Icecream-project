@@ -1,6 +1,6 @@
-<section id=contacts class="contacts contacts-section">
-    <div class="contacts-bg"> </div>
-    <div class="contacts-wrapp container">
+<section id=contacts class="contacts">
+    <div class="container">
+        <div class="contacts-wrapp"> 
         <h2 class="visually-hidden">Contacts</h2>
 
         <ul class="list contacts__list">
@@ -66,31 +66,32 @@
             </li>
 
         </ul>
-        <ul class="list contacts-bnt">
-            <li class="contacts-bnt__item"><button type="button" class="button button--size button--red">
-                    Our Locations
-                    <span class="arrow"></span></button></li>
-            <li class="contacts-bnt__item"><button type="button" class="button button--size button--white">
-                    Franchise
-                    <span class="arrow"></span></button></li>
-        </ul>
-      
+            <ul class="list contacts-bnt">
+              
+                <li class="contacts-bnt__item"><button type="button" class="button button--size button--red " data-modal-open>
+                        Our Locations
+                        <span class="arrow"></span></button></li>
+                <li class="contacts-bnt__item"><button type="button" class="button button--size button--white">
+                        Franchise
+                        <span class="arrow"></span></button></li>
+            </ul>
+    </div>
     </div>
 </section>
 
 <div class="backdrop is-hidden" data-modal>
 
     <div class="modal">
-        <button class="modal__button" data-modal-close>
-            <svg class="modal__icon">
-                <use href="./images/sprite.svg#icon-arrow"></use>
+        <button class="modal__button button--white button--size" data-modal-close>
+            <svg class=" modal__icon">
+                <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button>
         <p class="section-title">Our Locations</p>
-
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d42835.054907362006!2d35.10417098505178!3d47.85526538828614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x40dc5da748548901%3A0xb8289e7a8f9d210!2z0JDQudGBINCX0LDQv9C-0YDQvtC20YzQtSwgMTAwLCDQnNCw0LPRltGB0YLRgNCw0LvRjNC90LAg0LLRg9C70LjRhtGPLCDQl9Cw0L_QvtGA0ZbQttC20Y8sINCX0LDQv9C-0YDRltC30YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2OTYwMA!3m2!1d47.8407907!2d35.2388313!5e0!3m2!1sru!2sua!4v1642382140454!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe class="map"
+    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d23681221.043657552!2d-109.855202!3d43.569591!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1642448641872!5m2!1sru!2sua"
+    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
 
 
         <p class="title">Come and taste best icecream ever</p>
