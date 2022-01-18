@@ -1,9 +1,9 @@
 .hero {
   overflow: hidden;
+  background: $herobg;
 }
 
 .hero-container {
-  background: $herobg;
   width: 100%;
   height: 502px;
   position: relative;
