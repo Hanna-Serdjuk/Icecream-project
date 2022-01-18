@@ -128,13 +128,10 @@
     font-weight: 700px;
     font-size: 14px;
     line-height: 1.29;
+    overflow: auto;
 
     @media screen and (min-width: $mobile) {
         width: 40vw;
-    }
-
-    @media screen and (min-width: $tablet) {
-        // width: 40vw;
     }
 
     @media screen and (min-width: $desktop) {
@@ -289,7 +286,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
 }
@@ -334,7 +331,6 @@
 }
 .modal-list__textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
-
     padding: 10px;
     border-radius: 4px;
     transition: border 250ms $cubic;
@@ -348,7 +344,12 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    // color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-list__input,
+.modal-list__textarea {
+    color: black;
 }
 
 .modal-list {
@@ -361,9 +362,13 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    color: $mainColor;
+    color: #ad435c;
     font-size: 14px;
 }
 .modal-chekbox input {
-    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.modal-close {
+    margin: 0 auto;
 }
