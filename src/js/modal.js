@@ -30,30 +30,16 @@
 
 
 
-window.addEventListener( "load", function () {
-  function sendData() {
-    const XHR = new XMLHttpRequest();
+(() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
 
-    const FD = new FormData( form );
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
 
-    XHR.addEventListener( "load", function(event) {
-      alert( event.target.responseText );
-    } );
-
-    XHR.addEventListener( "error", function( event ) {
-      alert( 'Oops! Something went wrong.' );
-    } );
-
-    XHR.open( "POST", "https://example.com/cors.php" );
-
-    XHR.send( FD );
-  }
-
-  const form = document.getElementById( "myForm" );
-
-  form.addEventListener( "submit", function ( event ) {
-    event.preventDefault();
-
-    sendData();
-  } );
-} );
+            e.currentTarget.reset();
+          });
+      })();

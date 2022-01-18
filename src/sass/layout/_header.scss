@@ -278,7 +278,14 @@
     background-color: transparent;
 }
 
-
+.modal__icon {
+    fill: rgb(233, 208, 208);
+    transition: fill $durationTime $cubic;
+    &:hover,
+    &:focus {
+        fill: $secondaryColor;
+    }
+}
 
 // Modal form
 
