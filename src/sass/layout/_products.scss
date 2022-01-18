@@ -387,6 +387,7 @@
   height: 77%;
 
   opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms $cubic;
 
   border-radius: 24px;
