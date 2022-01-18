@@ -30,8 +30,8 @@
         margin-right: -30px;        
     }
 }
-.advantages__item {    
-    max-width: 230px;    
+.advantages__item { 
+    width: 50%;
     
     @media screen and (min-width: $tablet) {
       margin-right: 60px;
