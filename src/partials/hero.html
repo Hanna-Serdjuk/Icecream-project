@@ -1,85 +1,82 @@
 <section class="hero">
- <div class="container hero-container"> 
-   <div class="hero__content">
-  <h1 class="title">ice cream<br>made with<br><span class="title--red">passion</span></h2>
-  </div>
-  <ul class="hero__list-btn list">
-    <li class="hero__item">
-      <a class="link" href="#products">
-        <button type="button" class="button button--red hero__btn">Products</button>
-      </a>
-    </li>
-    <li class="hero__item">
-      <a class="link" href="#about-us">
-        <button type="button" class="button button--white hero__btn">How it’s made?</button>
-      </a>
-    </li>
-  </ul>
-  <div class="hero__circle"></div>
-  <div class="hero__ice-pict">
-    <picture>
-      <source
-        srcset="/images/hero/ice-pc-1x.png 1x, /images/hero/ice-pc-2x.png 2x"
-        media="(min-width: $desktop)"
-      />
-      <source
-        srcset="/images/hero/ice-tab-1x.png 1x, /images/hero/ice-tab-2x.png 2x"
-        media="(min-width: $tablet)"
-      />
-      <source
-        srcset="/images/hero/ice-mob-1x.png 1x, /images/hero/ice-mob-2x.png 2x"
-        media="(min-width: $mobile)"
-      />
-      <img src="/images/hero/ice-pc-2x.png" alt="icecream" />
-    </picture>
-  </div>
-  <div class="hero__milk-container">
-    <div class="hero__milk-pict">
+  <div class="container hero-container">
+    <div class="hero__content">
+      <h1 class="title">ice cream<br />made with<br /><span class="title--red">passion</span></h1>
+    </div>
+    <ul class="hero__list-btn list">
+      <li class="hero__item">
+        <a class="link button--red hero__btn" href="#products"> Products </a>
+      </li>
+      <li class="hero__item">
+        <a class="link button--white hero__btn" href="#about-us"> How it’s made? </a>
+      </li>
+    </ul>
+    <div class="hero__circle"></div>
+    <div class="hero__ice-pict">
       <picture>
         <source
-          srcset="/images/hero/milk-pc-1x.png 1x, /images/hero/milk-pc-2x.png 2x"
+          srcset="/images/hero/ice-pc-1x.png 1x, /images/hero/ice-pc-2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/images/hero/ice-tab-1x.png 1x, /images/hero/ice-tab-2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/images/hero/ice-mob-1x.png 1x, /images/hero/ice-mob-2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img src="/images/hero/ice-pc-2x.png" alt="icecream" />
+      </picture>
+    </div>
+    <div class="hero__milk-container">
+      <div class="hero__milk-pict">
+        <picture>
+          <source
+            srcset="/images/hero/milk-pc-1x.png 1x, /images/hero/milk-pc-2x.png 2x"
+            media="(min-width: $desktop)"
+          />
+          <source
+            srcset="/images/hero/milk-tab-1x.png 1x, /images/hero/milk-tab-2x.png 2x"
+            media="(min-width: $tablet)"
+          />
+          <img src="/images/hero/milk-pc-2x.png" alt="icecream" />
+        </picture>
+      </div>
+      <div>
+        <p class="hero__milk-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button type="button" class="products-list__button button-fix">
+          <svg class="right_arrow" width="10" height="10">
+            <use href="./images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero__girl-pict">
+      <picture>
+        <source
+          srcset="/images/hero/girl-pc-1x.png 1x, /images/hero/girl-pc-2x.png 2x"
           media="(min-width: $desktop)"
         />
         <source
-          srcset="/images/hero/milk-tab-1x.png 1x, /images/hero/milk-tab-2x.png 2x"
+          srcset="/images/hero/girl-tab-1x.png 1x, /images/hero/girl-tab-2x.png 2x"
           media="(min-width: $tablet)"
         />
-        <img src="/images/hero/milk-pc-2x.png" alt="icecream" />
+        <img src="/images/hero/girl-pc-2x.png" alt="icecream" />
       </picture>
     </div>
-    <div>
-      <p class="hero__milk-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <button type="button" class="products-list__button button-fix">
-        <svg class="right_arrow" width="10" height="10">
-        <use href="./images/sprite.svg#icon-arrow"></use>                    
-    </svg>
-</button>
-    </div>
+    <ul class="list hero__inf">
+      <li>
+        <p class="hero__inf-number">16</p>
+        <p class="hero__inf-text">cafes</p>
+      </li>
+      <li>
+        <p class="hero__inf-number">23</p>
+        <p class="hero__inf-text">food trucks</p>
+      </li>
+    </ul>
   </div>
-  <div class="hero__girl-pict">
-    <picture>
-      <source
-        srcset="/images/hero/girl-pc-1x.png 1x, /images/hero/girl-pc-2x.png 2x"
-        media="(min-width: $desktop)"
-      />
-      <source
-        srcset="/images/hero/girl-tab-1x.png 1x, /images/hero/girl-tab-2x.png 2x"
-        media="(min-width: $tablet)"
-      />
-      <img src="/images/hero/girl-pc-2x.png" alt="icecream" />
-    </picture>
-  </div>
-  <ul class="list hero__inf">
-    <li>
-      <p class="hero__inf-number">16</p>
-      <p class="hero__inf-text">cafes</p>
-    </li>
-    <li>
-      <p class="hero__inf-number">23</p>
-      <p class="hero__inf-text">food trucks</p>
-    </li>
-  </ul></div>
 </section>
