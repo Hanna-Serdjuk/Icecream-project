@@ -204,7 +204,7 @@
 
 // Modal window
 
-.blackdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -213,31 +213,33 @@
     background-color: rgba(192, 98, 129,0.6);
 
     opacity: 1;
-    transition: opacity 250ms $cubic;
+    transition: opacity 500ms $cubic,
+    visibility 500ms $cubic;
     z-index: 99;
 }
 
-.blackdrop.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
 
-.blackdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(0.5);
-
+.backdrop.is-hidden .modal {
+    transition: transform 850ms $cubic;
+    transform: translate(-500px, -500px) scaleY(0.5);
 }
+
 
 .modal {
     position: absolute;
-    max-width: 300px;
+    min-width: 300px;
     height: 80vh;
     border-radius: 12px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scaleY(1);
-    transition: transform 250ms $cubic;
     padding: 20px 40px;
+    transform: translate(-50%, -50%) scaleY(1);
+
     
     background-image: linear-gradient(
     to bottom, #E17992, #dfcacf);
@@ -246,16 +248,13 @@
 -webkit-box-shadow: 7px 8px 13px 12px rgba(217,174,197,0.34);
 -moz-box-shadow: 7px 8px 13px 12px rgba(217,174,197,0.34);
 
-    @media screen and (min-width: $mobile) {
-        width: 100%;
-    }
 
     @media screen and (min-width: $tablet) {
-        max-width: 400px;
+        min-width: 400px;
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 560px;
+        min-width: 500px;
     }
 }
 
@@ -332,6 +331,7 @@
 .modal-list__textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding: 10px;
+    resize: none;
     border-radius: 4px;
     transition: border 250ms $cubic;
 
@@ -344,7 +344,6 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    // color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-list__input,
@@ -371,4 +370,5 @@
 
 .modal-close {
     margin: 0 auto;
+    min-width: 160px;
 }
