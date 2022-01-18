@@ -55,6 +55,7 @@
 .hero__btn {
   @include font('DM Sans', 400, 8px, 1.25);
   padding: 10px 25px;
+  border-radius: 20px;
   max-width: 100%;
   margin-right: 8px;
   @media screen and (min-width: $desktop) {
@@ -71,7 +72,7 @@
   background: $pinkColor;
   z-index: 2;
   top: 83px;
-  left: 36px;
+  left: 50px;
   @media screen and (min-width: $mobile) {
     left: 180px;
   }
@@ -90,10 +91,7 @@
 }
 
 .hero__ice-pict {
-  // padding-top: 92px;
-  // margin: 0 40% 0 35%;
-  width: 171px;
-  // height: 410px;
+  width: 100%;
   display: flex;
   z-index: 5;
   position: absolute;
@@ -111,31 +109,6 @@
 
   picture {
     position: relative;
-
-    // &::after {
-    //   content: '';
-    //   position: absolute;
-    //   display: block;
-    //   width: 346px;
-    //   height: 346px;
-    //   border-radius: 50%;
-    //   background: $pinkColor;
-    //   z-index: -1;
-    //   top: 50%;
-    //   left: 50%;
-    //   transform: translate(calc(-50% + 13px), -50%);
-
-    //   @media screen and (min-width: $tablet) {
-    //     width: 324px;
-    //     height: 324px;
-    //     transform: translate(calc(-50% + 39px), -50%);
-    //   }
-    //   @media screen and (min-width: $desktop) {
-    //     width: 538px;
-    //     height: 538px;
-    //     transform: translate(calc(-50% + 64px), -50%);
-    //   }
-    // }
   }
 }
 
@@ -182,52 +155,7 @@
     width: 200px;
     height: 78px;
   }
-  // & + button {
-  //   display: block;
-  //   margin-top: 7px;
-  //   width: 18px;
-  //   height: 18px;
-  //   background-color: #fff;
-  //   border-radius: 50%;
-  //   position: relative;
-  //   border: none;
-
-  //   &::before,
-  //   &::after {
-  //     content: '';
-  //     position: absolute;
-  //     display: block;
-  //     top: 50%;
-  //   }
-
-  //   &::before {
-  //     width: 30%;
-  //     height: 1px;
-  //     background-color: $secondaryColor;
-  //     left: 50%;
-  //     transform: translate(-50%, -50%);
-  //   }
-
-  //   &::after {
-  //     width: 4px;
-  //     height: 4px;
-  //     border-top: 1px solid;
-  //     border-right: 1px solid;
-  //     border-color: $secondaryColor;
-  //     left: 65%;
-  //     transform: translate(-100%, -50%) rotate(45deg);
-  //   }
-  // }
 }
-
-// .button-fix {
-//   width: -18px;
-//   height: -18px;
-//   @media screen and (min-width: $desktop) {
-//     width: -26px;
-//     height: -26px;
-//   }
-// }
 
 .hero__girl-pict {
   display: none;
