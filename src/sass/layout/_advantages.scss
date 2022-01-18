@@ -4,47 +4,48 @@
     padding-top: 39px;
     
     @media screen and (min-width: $tablet){
-      padding-top: 66px;
-      padding-bottom: 140px;
+       padding-top: 66px;
+       padding-bottom: 140px;
     }
     @media screen and (min-width: $desktop){
         padding-top: 39px;
         padding-bottom: 139px;
     }
-  }
-  .advantages__list {
+}
+.advantages__list {
         li:not(:last-child) {
             margin-bottom: 38px;
         }
+   
+    @media screen and (min-width: $tablet) {
+        display: flex;        
+        li:last-child {
+            margin-right: 40px;            
+        }
+        li:not(:last-child) {
+          margin-bottom: 0px;
+        }
+    }
+    @media screen and (min-width: $desktop) {        
+        justify-content: center;
+        li:last-child {
+        margin-right: 0px;
+        }
+    }
+}
+.advantages__item {  
+    max-width: 230px;    
     
     @media screen and (min-width: $tablet) {
-        display: flex;
-        li:not(:last-child) {
-            margin-right: 60px;
-            margin-bottom: 0;
-        }
-    }    
-    @media screen and (min-width: $desktop) {
-        justify-content: center;
-      li:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-  }
-  .advantages__item {
-    height: auto;
-    width: 100%;
-    @media screen and (min-width: $mobile) {
-      width: 230px;
-    }
-    @media screen and (min-width: $tablet) {
-      width: calc((100% - 160px) / 3);
+      margin-right: 60px;
+      flex-basis: calc(100% / 3);
     }
     @media screen and (min-width: $desktop) {
-      width: calc((100% - 218px) / 3);
+      flex-basis: calc((100% - 218px) / 3);
+      margin-right: 30px;
     }
-  }
-  .advantages__pic {
+}
+.advantages__pic {
     margin-bottom: 16px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 36px;
@@ -52,52 +53,52 @@
     @media screen and (min-width: $desktop) {
       margin-bottom: 40px;
     }
-  }
-  .advantages__pic--first {
+}
+.advantages__pic--first {
     width: 33px;
     height: 50px;
     display: flex;
     &::before {
-      width: 33px;
-      height: 50px;
-      content: '';
-      background-image: url(../images/advantages/adv-icon1.png);
-      background-size: 33px 50px;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/advantages/adv-icon1-2x.png);
-      }
+        width: 33px;
+        height: 50px;
+        content: '';
+        background-image: url(../images/advantages/adv-icon1.png);
+        background-size: 33px 50px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/advantages/adv-icon1-2x.png);
+        }
     }
-  }
-  .advantages__pic--second {
+}
+.advantages__pic--second {
     width: 50px;
     height: 50px;
     display: flex;
     &::before {
-      width: 50px;
-      height: 50px;
-      content: '';
-      background-image: url(../images/advantages/adv-icon2.png);
-      background-size: 50px 50px;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/advantages/adv-icon2-2x.png);
-      }
+        width: 50px;
+        height: 50px;
+        content: '';
+        background-image: url(../images/advantages/adv-icon2.png);
+        background-size: 50px 50px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/advantages/adv-icon2-2x.png);
+        }
     }
-  }
-  .advantages__pic--third {
+}
+.advantages__pic--third {
     width: 44px;
     height: 50px;
     display: flex;
     &::before {
-      width: 44px;
-      height: 50px;
-      content: '';
-      background-image: url(../images/advantages/adv-icon3.png);
-      background-size: 44px 50px;
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/advantages/adv-icon3-2x.png);
-      }
+        width: 44px;
+        height: 50px;
+        content: '';
+        background-image: url(../images/advantages/adv-icon3.png);
+        background-size: 44px 50px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/advantages/adv-icon3-2x.png);
+        }
     }
-  }
+}
 .advantages__item-text { 
     font-family: Titan One;
     text-transform: uppercase;
