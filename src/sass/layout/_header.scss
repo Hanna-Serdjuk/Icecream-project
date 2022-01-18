@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color: $pinkColor;
+    background-color: $herobg;
 }
 
 .header-conteiner {
@@ -141,7 +141,7 @@
     display: none;
     }
 
-    z-index: 9;
+    z-index: 11;
 
     transform: translateX(100%);
     transition: transform 300ms $cubic;
@@ -217,7 +217,7 @@
 
     opacity: 1;
     transition: opacity 250ms $cubic;
-    z-index: 2;
+    z-index: 99;
 }
 
 .blackdrop.is-hidden {
