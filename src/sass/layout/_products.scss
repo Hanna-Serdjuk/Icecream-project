@@ -380,6 +380,7 @@
 //===============overlay==============
 
 .products-overlay {
+  pointer-events: none;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -397,7 +398,7 @@
     padding: 20px 20px;
   }
 
-  .products-list__button:active & {
+  .products-list__button:hover & {
     opacity: 1;
   }
 
