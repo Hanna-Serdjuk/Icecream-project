@@ -18,22 +18,19 @@
         }
    
     @media screen and (min-width: $tablet) {
-        display: flex;        
-        li:last-child {
-            margin-right: 40px;            
-        }
+        display: flex;   
+        margin-right: -20px;     
+        
         li:not(:last-child) {
-          margin-bottom: 0px;
+            margin-bottom: 0px;
         }
     }
     @media screen and (min-width: $desktop) {        
         justify-content: center;
-        li:last-child {
-        margin-right: 0px;
-        }
+        margin-right: -30px;        
     }
 }
-.advantages__item {  
+.advantages__item {    
     max-width: 230px;    
     
     @media screen and (min-width: $tablet) {
