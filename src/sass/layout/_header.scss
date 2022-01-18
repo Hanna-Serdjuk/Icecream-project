@@ -271,8 +271,8 @@
     margin-top: 8px;
     margin-right: 8px;
 
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     background-color: transparent;
@@ -373,4 +373,8 @@
 .modal-close {
     margin: 0 auto;
     min-width: 160px;
+    &:hover,
+    &:focus {
+        background-color: #eb8ea4;
+    }
 }
