@@ -157,6 +157,22 @@
   }
 }
 
+.button-fix {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 100px;
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 .hero__girl-pict {
   display: none;
   @media screen and (min-width: $tablet) {
