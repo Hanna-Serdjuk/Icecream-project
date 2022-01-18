@@ -1,5 +1,5 @@
-.backdrop {
-  z-index: 6;
+.backdrop-data-modal {
+  z-index: 10;
   padding: 4px;
   overflow-y: scroll;
 
@@ -27,7 +27,7 @@
   transform: translate(-50%, -50%) scale(2);
 }
 
-.modal {
+.modal-map {
   padding: 15px;
   z-index: inherit;
   position: relative;
@@ -39,8 +39,8 @@
   background-image: radial-gradient(
     circle at top right,
     rgba(212, 20, 67, 0.1) 15%,
-    #fff5f6 40%,
-    #ffa5ba
+    #ffa5ba 40%,
+    #fff5f6
   );
   box-shadow: 0px 8px 30px $shadowColor;
   border-radius: 24px;
@@ -67,7 +67,7 @@
   left: 50%;
   width: 290px;
   height: 75vh;
-  border-radius: 12px;
+  border-radius: 24px;
 
   transform: translate(-50%, -60%);
   @media screen and (min-width: 480px) {
@@ -84,18 +84,12 @@
   }
 }
 
-.modal__icon {
+.map__icon {
   padding: 0;
-
   width: 18px;
   height: 18px;
-  fill: #000000;
-
-  &:hover {
-    fill: $accentColorSecond;
-  }
 }
-.modal__button {
+.map__button {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -109,8 +103,13 @@
   border: 1px solid rgba(46, 46, 46, 0.1);
   background-color: #ffa5ba;
   transition: fill 550ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #d41443;
+  }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px), (orientation: landscape) {
   .title--media {
     font-size: 18px;
   }
