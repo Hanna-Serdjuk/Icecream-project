@@ -9,9 +9,15 @@
   color: $mainColor;
 }
 .title--red {
-  font-size: $fontSizeTitleAccent;
+  font-size: 48px;
   line-height: $lineHeightTitleAccent;
   color: $secondaryColor;
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+  }
 }
 
 // Заголовок h2
