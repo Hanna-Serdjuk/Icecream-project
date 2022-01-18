@@ -68,7 +68,7 @@
         </ul>
             <ul class="list contacts-bnt">
               
-                <li class="contacts-bnt__item"><button type="button" class="button button--size button--red " data-modal-open>
+                <li class="contacts-bnt__item"><button type="button" class="button button--size button--red data-modal-open-btn">
                         Our Locations
                         <span class="arrow"></span></button></li>
                 <li class="contacts-bnt__item"><button type="button" class="button button--size button--white">
@@ -79,11 +79,11 @@
     </div>
 </section>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden backdrop-data-modal">
 
-    <div class="modal">
-        <button class="modal__button button--white button--size" data-modal-close>
-            <svg class=" modal__icon">
+    <div class="modal-map">
+        <button class="map__button button--white button--size data-modal-close-btn">
+            <svg class="map__icon">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button>
