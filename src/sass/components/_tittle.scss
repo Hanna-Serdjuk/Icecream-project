@@ -7,6 +7,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $mainColor;
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 38px;
+  }
 }
 .title--red {
   font-size: 48px;
