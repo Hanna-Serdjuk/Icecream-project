@@ -407,7 +407,7 @@
     }
 
     .products-list__button:focus & {
-
+      opasity:1;
       transform: translateY(0);
       display: block;
     }
