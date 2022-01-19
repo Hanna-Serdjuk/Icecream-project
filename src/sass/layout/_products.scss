@@ -1,5 +1,13 @@
 .section-products {
-  padding: 100px 0;
+  padding: 121px 0 98px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 122px 0 112px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 127px 0 119px 0;
+  }
 }
 
 .pre-title-products {
@@ -40,7 +48,6 @@
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-   
   }
 }
 
@@ -378,14 +385,13 @@
   border: none;
   transition: 250ms $cubic;
   &:hover {
-    background: #ECEBEB;  
+    background: #ecebeb;
   }
 }
 
 .right_arrow {
   fill: #d41443;
   vertical-align: middle;
-
 }
 
 //===============overlay==============
