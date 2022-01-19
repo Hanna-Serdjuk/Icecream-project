@@ -25,6 +25,8 @@
     width: 1280px;
   }
 }
+
+
 .hero__content {
   max-width: 66%;
   z-index: 8;
@@ -36,6 +38,16 @@
     max-width: 162px;
   }
   @media screen and (min-width: $desktop) {
+    max-width: 277px;
+  }
+}
+
+.hero-title{
+  max-width: 218px;
+  @media screen and (min-width:$tablet) {
+    max-width: 162px;
+  }
+  @media screen and (min-width:$desktop) {
     max-width: 277px;
   }
 }
