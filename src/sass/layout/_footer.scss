@@ -82,9 +82,15 @@
 
 .footer-social {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-bottom: 46px;
   width: 152px;
+}
+
+.footer-social__item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 
 .footer-social__link {
@@ -105,20 +111,25 @@
   }
 }
 
-.footer-contact {
+.footer-contact__text {
   display: flex;
   align-items: center;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
+  color: $textColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
 }
 
 .footer-contact__tel {
   color: $secondaryColor;
-}
-
-.footer-contact__text {
-  color: $textColor;
 }
 
 .footer-social__icon {
