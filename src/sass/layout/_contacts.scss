@@ -86,22 +86,22 @@
   }
 }
 .card__item {
+}
+
+.card__title {
   padding-right: 15px;
   padding-left: 15px;
   display: inline-block;
   background: #f0d1a5;
   border-radius: 6px;
   margin-bottom: 32px;
-}
-
-.card__item--green {
-  background: #c2e297;
-}
-.card__title {
   font-size: $fontSizeCard;
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $mainColor;
+}
+.card__title--green {
+  background: #c2e297;
 }
 .card__subtitle {
   line-height: 1.86;
@@ -161,23 +161,25 @@
   margin-bottom: 10px;
 }
 
-.contacts__link {
+.contacts-data {
   line-height: 1.5;
-  display: block;
+
   @media screen and (min-width: $desktop) {
     line-height: 1.83;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     line-height: 1.83;
   }
-  color: $greyColor;
 }
 
+.contacts-data__link {
+  display: block;
+  color: $greyColor;
+}
 .contacts-bnt {
   display: flex;
-
   justify-content: center;
-  gap: 15px;
+
   @media screen and (max-width: 767px) {
     flex-direction: column;
     justify-content: center;
@@ -190,5 +192,12 @@
 .button--paddings {
   @media screen and (max-width: 767px) {
     padding: 10px 17px;
+  }
+}
+.contacts-bnt__first {
+  margin-right: 15px;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
