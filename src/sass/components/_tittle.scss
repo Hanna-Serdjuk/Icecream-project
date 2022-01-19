@@ -24,10 +24,11 @@
   font-size: 48px;
   line-height: 0.89;
   color: $secondaryColor;
-  @media screen and (min-width: $mobile) {
-    font-size: $fontSizeSectionTitleMob;
-    line-height: 0.9;
-  }
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: 'Titan One', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   @media screen and (min-width: $tablet) {
     font-size: 34px;
     line-height: 0.905;
