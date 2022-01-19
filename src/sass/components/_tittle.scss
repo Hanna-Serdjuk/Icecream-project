@@ -27,20 +27,15 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-family: 'Titan One', Arial, sans-serif;
-
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   @media screen and (min-width: $tablet) {
-    font-family: 'Titan One', Arial, sans-serif;
     font-size: 34px;
     line-height: 0.905;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
   }
   @media screen and (min-width: $desktop) {
-    font-family: 'Titan One', Arial, sans-serif;
     font-size: 58px;
     line-height: 0.89;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
   }
 }
 
