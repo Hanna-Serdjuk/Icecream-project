@@ -46,5 +46,6 @@
   &:hover,
   &:focus {
     background: $accentColor;
+    transition: 250ms $cubic;
   }
 }
