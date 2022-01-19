@@ -40,17 +40,16 @@
   }
 }
 
-
-.hero-title{
+.hero-title {
   position: relative;
   z-index: 9;
   max-width: 218px;
   margin-bottom: 19px;
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     max-width: 162px;
     margin-bottom: 20px;
   }
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     max-width: 277px;
     margin-bottom: 25px;
   }
@@ -73,11 +72,14 @@
   padding: 10px 25px;
   border-radius: 20px;
   max-width: 100%;
-  margin-right: 8px;
+
   @media screen and (min-width: $desktop) {
     @include font('DM Sans', 400, 14px, 1.28);
     height: 40px;
   }
+}
+.hero__item {
+  margin-right: 8px;
 }
 
 .hero__circle {
