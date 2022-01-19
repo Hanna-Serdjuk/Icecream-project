@@ -45,11 +45,14 @@
   position: relative;
   z-index: 9;
   max-width: 218px;
+  margin-bottom: 19px;
   @media screen and (min-width:$tablet) {
     max-width: 162px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width:$desktop) {
     max-width: 277px;
+    margin-bottom: 25px;
   }
 }
 
