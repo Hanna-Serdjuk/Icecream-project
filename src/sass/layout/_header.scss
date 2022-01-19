@@ -6,9 +6,13 @@
 }
 
 .header-conteiner {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     padding: 6px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     max-width: $mobile;
 
@@ -22,25 +26,17 @@
         max-width: $desktop;
 }}
 
-.header-nav {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    @media screen and (min-width: $desktop) {
-    padding-top: 38px;
-}
-}
-
-.header__logo-div {
+.header__logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header__logo {
+
+.header__icon {
     width: 50px;
 }
+
 .header__company-name {
     margin-left: 20px;
     font-family: $secondaryFont;
@@ -99,18 +95,18 @@
 }
 
 .header-nav__link {
-    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     color: $mainColor;
     transition: color 250ms $cubic;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     &:hover,
     &:focus {
         color: $secondaryColor;
     }
-
 }
 
 // Mobile  menu
