@@ -24,18 +24,23 @@
   gap: 140px;
 
   @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 220px 220px 220px;
-    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     justify-content: center;
-    grid-gap: 20px;
+
+    // display: grid;
+    // grid-template-columns: 220px 220px 220px;
+    // align-items: stretch;
+    // justify-content: center;
+    // grid-gap: 20px;
   }
   @media screen and (min-width: 1280px) {
-    display: grid;
-    grid-template-columns: 335px 335px 335px;
-    align-items: stretch;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    grid-gap: 30px;
+    gap: 30px;
+   
   }
 }
 
@@ -45,12 +50,13 @@
   border-radius: 24px;
 
   @media screen and (min-width: 768px) {
+    width: 220px;
     padding: 150px 11px 40px;
     height: max-content;
   }
   @media screen and (min-width: 1280px) {
     width: 335px;
-    padding: 190px 20px 40px;
+    padding: 163px 20px 40px;
     margin-bottom: 0;
   }
 }
@@ -64,7 +70,6 @@
     left: 0;
     right: 0;
     top: -116px;
-    // display: block;
     margin: 0 auto;
     background-image: url('../images/products/pink_icecream_mob_1x.png');
     width: 249px;
@@ -76,6 +81,7 @@
       background-image: url('../images/products/pink_icecream_mob_2x.png');
       width: 249px;
       height: 242px;
+      top: -105px;
       background-position: center;
       background-size: 249px 242px;
     }
@@ -370,11 +376,16 @@
   background: white;
   border-radius: 50%;
   border: none;
+  transition: 250ms $cubic;
+  &:hover {
+    background: #ECEBEB;  
+  }
 }
 
 .right_arrow {
   fill: #d41443;
   vertical-align: middle;
+
 }
 
 //===============overlay==============
