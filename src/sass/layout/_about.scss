@@ -6,7 +6,7 @@
     background-image: url(../images/about/milk-mob.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 125%;
+    background-position: 50% 93%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/milk-mob2x.png);
@@ -51,6 +51,7 @@
 }
 
 .about-content {
+  position: relative;
   @media screen and (min-width: $tablet) {
     width: 40%;
 
@@ -107,5 +108,17 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 45px;
     }
+  }
+}
+
+.overlay-text {
+  @extend .overlay-text;
+
+  .about-button:active & {
+    opacity: 1;
+  }
+
+  .about-button:focus & {
+    opacity: 1;
   }
 }
