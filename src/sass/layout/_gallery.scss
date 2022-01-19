@@ -10,9 +10,7 @@
     background: linear-gradient(to top, $mainColor 69.5%, $contrastBgColor 31%);
   }
 }
-.gallery-pic {
-  background-size: cover;
-  padding-left: 0;
+.gallery .container{
   padding-right: 0;
-  
+  padding-left: 0;
 }
