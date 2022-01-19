@@ -6,7 +6,7 @@
     background-image: url(../images/about/milk-mob.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 93%;
+    background-position: 50% 125%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/milk-mob2x.png);
@@ -17,7 +17,7 @@
     background-image: url(../images/about/milk-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 100%;
+    background-position: 50% 125%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/milk-desktop2x.png);
@@ -52,7 +52,7 @@
 
 .about-content {
   @media screen and (min-width: $tablet) {
-    width: 50%;
+    width: 40%;
 
     padding-top: 50px;
     &:first-of-type {
