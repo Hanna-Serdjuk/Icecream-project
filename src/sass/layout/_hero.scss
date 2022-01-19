@@ -164,12 +164,26 @@
   background: white;
   border-radius: 50%;
   border: none;
+  justify-content: center;
   align-items: center;
   margin-top: 15px;
   margin-right: 100px;
   @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
+  }
+  &:hover,
+  &:focus {
+    background: $accentColor;
+  }
+}
+
+.right_arrow {
+  width: 5px;
+  height: 5px;
+  @media screen and (min-width: 1280px) {
+    width: 10px;
+    height: 10px;
   }
 }
 
