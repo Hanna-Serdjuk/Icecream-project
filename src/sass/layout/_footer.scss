@@ -33,7 +33,7 @@
 
 .footer__text {
   font-family: $secondaryFont;
-  font-size: $fontSizeLbTitle;
+  font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
 
@@ -42,10 +42,12 @@
   @media screen and (min-width: $tablet) {
     line-height: 1.15;
     letter-spacing: 0.04em;
+    font-size: 26px;
   }
 
   @media screen and (min-width: $desktop) {
     line-height: 1.13;
+    font-size: $fontSizeLbTitle;
   }
 }
 
@@ -57,9 +59,18 @@
   letter-spacing: $letterSpSectionTitle;
 
   color: $secondaryColor;
-
+  @media screen and (min-width: $mobile) {
+    font-size: $fontSizeSectionTitleMob;
+  }
   @media screen and (max-width: 767px) {
     margin-bottom: 43px;
+  }
+  @media screen and (min-width: $tablet) {
+    letter-spacing: $letterSpacingBig;
+    font-size: 48px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
   }
 }
 
