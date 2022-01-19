@@ -29,8 +29,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 140px;
-
+  gap: 131px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -53,7 +52,7 @@
 
 .products-list__item {
   position: relative;
-  padding: 160px 20px 40px;
+  padding: 160px 20px 42px; 
   border-radius: 24px;
 
   @media screen and (min-width: 768px) {
@@ -153,7 +152,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -116px;
+    top: -107px;
     display: block;
     margin: 0 auto;
     background-image: url('../images/products/ice-coffe_mob_1x.png');
@@ -230,8 +229,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -116px;
-    display: block;
+    top: -105px;
+        display: block;
     margin: 0 auto;
     background-image: url('../images/products/milkshakes_mob_1x.png');
     width: 249px;
@@ -334,8 +333,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 152%;
-  padding: 14px 0 30px;
-
+padding: 14px 0 47px;
   text-align: center;
   letter-spacing: 0.04em;
 
