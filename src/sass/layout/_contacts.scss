@@ -37,17 +37,22 @@
   justify-content: center;
   margin: -20px;
   margin-bottom: 80px;
-
-  @media screen and (min-width: $desktop) {
-    justify-content: center;
-    margin: -15px;
-    margin-bottom: 85px;
-  }
   @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
     margin: -10px;
     margin-bottom: 55px;
+    font-size: $fontSizeCardM;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: $fontSizeCardT;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    margin: -15px;
+    margin-bottom: 85px;
+    font-size: $fontSizeCard;
   }
 }
 .card {
@@ -93,22 +98,18 @@
   background: #c2e297;
 }
 .card__title {
-  @media screen and (min-width: $tablet) {
-    font-size: 16px;
-  }
+  font-size: $fontSizeCard;
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $mainColor;
 }
 .card__subtitle {
-  font-size: $fontSizeCard;
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: $textColor;
 }
 .card__text {
   line-height: 1.5;
-  font-size: $fontSizeCard;
   @media screen and (min-width: $tablet) {
     line-height: 1.66;
   }
@@ -163,17 +164,12 @@
 .contacts__link {
   line-height: 1.5;
   display: block;
-
-  font-size: $fontSizeCard;
-
   @media screen and (min-width: $desktop) {
     line-height: 1.83;
   }
-
   @media screen and (min-width: 480px) and (max-width: 767px) {
     line-height: 1.83;
   }
-
   color: $greyColor;
 }
 
@@ -184,7 +180,6 @@
   gap: 15px;
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    // align-items: center;
     justify-content: center;
   }
 }
