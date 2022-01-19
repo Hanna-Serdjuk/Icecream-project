@@ -26,7 +26,6 @@
   }
 }
 
-
 .hero__content {
   max-width: 66%;
   z-index: 8;
@@ -42,12 +41,12 @@
   }
 }
 
-.hero-title{
+.hero-title {
   max-width: 218px;
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     max-width: 162px;
   }
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     max-width: 277px;
   }
 }
@@ -63,7 +62,9 @@
   @media screen and (min-width: $desktop) {
   }
 }
-
+.hero__item {
+  margin-right: 8px;
+}
 .hero__btn {
   @include font('DM Sans', 400, 8px, 1.25);
   padding: 10px 25px;
