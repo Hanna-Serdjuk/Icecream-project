@@ -52,7 +52,7 @@
 
 .about-content {
   @media screen and (min-width: $tablet) {
-    width: 40%;
+    width: 50%;
 
     padding-top: 50px;
     &:first-of-type {
@@ -66,6 +66,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    width: 40%;
     padding-top: 56px;
 
     &:first-of-type {
