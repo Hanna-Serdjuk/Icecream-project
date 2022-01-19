@@ -6,7 +6,7 @@
     background-image: url(../images/about/milk-mob.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 93%;
+    background-position: 50% 125%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/milk-mob2x.png);
@@ -17,7 +17,7 @@
     background-image: url(../images/about/milk-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 100%;
+    background-position: 50% 125%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/milk-desktop2x.png);
@@ -43,48 +43,6 @@
   }
 }
 
-.about-container::before {
-  content: '';
-  display: flex;
-
-  width: 280px;
-  height: 279px;
-
-  background-image: url(../images/about/cow-mob.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/about/cow-mob2x.png);
-  }
-
-  @media screen and(min-width:$tablet) {
-    width: 340px;
-    height: 339px;
-
-    background-image: url(../images/about/cow-tab.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about/cow-tab2x.png);
-    }
-  }
-
-  @media screen and(min-width:$desktop) {
-    width: 516px;
-    height: 516px;
-
-    background-image: url(../images/about/cow-desktop.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/about/cow-desktop2x.png);
-    }
-  }
-}
-
 .about-container {
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -94,9 +52,12 @@
 
 .about-content {
   @media screen and (min-width: $tablet) {
-    width: 50%;
-    margin-left: 17px;
+    width: 40%;
+
     padding-top: 50px;
+    &:first-of-type {
+      margin-left: 17px;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -106,7 +67,10 @@
 
   @media screen and (min-width: $desktop) {
     padding-top: 56px;
-    margin-left: 74px;
+
+    &:first-of-type {
+      margin-left: 74px;
+    }
   }
 }
 
@@ -143,13 +107,5 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 45px;
     }
-  }
-}
-
-.about-button {
-  @media screen and(max-width:767px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }

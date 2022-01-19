@@ -6,6 +6,30 @@
 
         <div class="about-container">
 
+            <picture>
+                <source srcset="
+                ./images/about/cow-desktop.png 1x,
+                ./images/about/cow-desktop2x.png 2x
+                "
+                media="(min-width:1280px)"
+                >
+
+                <source srcset="
+                ./images/about/cow-tab.png 1x,
+                ./images/about/cow-tab2x.png 2x
+                "
+                media="(min-width:768px)"
+                >
+
+                <source srcset="
+                ./images/about/cow-mob.png 1x,
+                ./images/about/cow-mob2x.png 2x"
+                
+                media="(min-width:320px)"
+                >
+                <img src="./images/about/cow-desktop2x.png" alt="cow">
+            </picture>
+
             <div class="about-content">
 
                 <p class="about-content__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
@@ -17,9 +41,8 @@
 
                 <p class="about-content__text">Aliquam erat volutpat. Aenean accumsan.</p>
                 
-                <div class="about-button">
-                    <button type="button" class="button button--white">Read more<span class="arrow"></span></button>
-                </div>
+                <button type="button" class="button button--white">Read more<span class="arrow"></span></button>
+
                 
             </div>
 
