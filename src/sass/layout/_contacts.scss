@@ -51,7 +51,7 @@
   @media screen and (min-width: $desktop) {
     justify-content: center;
     margin: -15px;
-    margin-bottom: 85px;
+    margin-bottom: 75px;
     font-size: $fontSizeCard;
   }
 }
@@ -137,15 +137,21 @@
   padding-bottom: 25px;
   padding-top: 25px;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 31px;
+    padding-top: 31px;
+    margin-bottom: 31px;
+  }
   @media screen and (min-width: $tablet) {
     padding-bottom: 31px;
     padding-top: 31px;
     margin-bottom: 31px;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    padding-bottom: 31px;
-    padding-top: 31px;
-    margin-bottom: 31px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 26px;
+    padding-top: 26px;
+    margin-bottom: 25px;
   }
 }
 .card__point:first-child {
