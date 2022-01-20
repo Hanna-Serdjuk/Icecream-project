@@ -80,6 +80,9 @@
 }
 .hero__item {
   margin-right: 8px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 15px;
+  }
 }
 
 .hero__circle {
@@ -104,7 +107,7 @@
     width: 538px;
     height: 538px;
     left: 475px;
-    top: 75px;
+    top: 52px;
   }
 }
 
@@ -145,17 +148,17 @@
 
 .hero__milk-container {
   display: none;
-  width: 330px;
-  left: 34px;
-  bottom: 28px;
-  align-items: end;
-  grid-template-columns: max-content auto;
-  position: absolute;
   @media screen and (min-width: $tablet) {
     display: grid;
+    width: 220px;
+    left: 34px;
+    bottom: 28px;
+    align-items: end;
+    grid-template-columns: max-content auto;
+    position: absolute;
   }
   @media screen and (min-width: $desktop) {
-    width: 429px;
+    width: 380px;
     left: 77px;
     bottom: 45px;
   }
@@ -163,15 +166,15 @@
 
 .hero__milk-text {
   @include font('DM Sans', 400, 8px, 1.25);
-  width: 114px;
-  height: 48px;
+  min-width: 114px;
+  min-height: 48px;
   line-height: 150%;
   color: $mainColor;
 
   @media screen and (min-width: $desktop) {
     @include font('DM Sans', 400, 14px, 1.28);
-    width: 200px;
-    height: 78px;
+    min-width: 200px;
+    min-height: 78px;
   }
 }
 
