@@ -145,11 +145,11 @@
 
 .swiper-pagination-bullet-active {
   background-image: url('/images/reviews/home.png');
-  background-size: cover;
+  background-size: 11px;
   border-radius: unset;
   background-color: white;
-  width: 12.4px;
-  height: 12px;
+  background-repeat: no-repeat;
+  
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
