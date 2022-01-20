@@ -1,5 +1,5 @@
 .swiper {
-  
+  width: 85px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -31,19 +31,16 @@
 .context {
   padding-top: 43px;
 }
-
 .reviews__text::before {
-
   content: '';
   width: 54px;
   position: absolute;
   height: 40px;
   background-size: contain;
   background-image: url('/images/reviews/123.png');
-  opacity: 0.5;
+  z-index: -1;
   top: -13px;
   left: 0;
-
 }
 .reviews__points {
   text-align: center;
@@ -144,13 +141,12 @@
 .swiper-slide img {
   display: block;
   object-fit: cover;
-  width: 85px;
 }
 
 .swiper-pagination-bullet-active {
   background-image: url('/images/reviews/home.png');
   background-size: cover;
-  // border-radius: unset;
+  border-radius: unset;
   background-color: white;
   width: 12.4px;
   height: 12px;
