@@ -108,18 +108,18 @@
 
   &:first-child {
     color: #000000;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
   }
 
   &:nth-last-child(-n + 3) {
-    margin-bottom: 17px;
+    // margin-bottom: 17px;
   }
 
   @media screen and(min-width:$tablet) {
     @include font('DM Sans', 500, 14px, 1.76);
 
     &:nth-last-child(-n + 2) {
-      margin-bottom: 60px;
+      // margin-bottom: 60px;
     }
   }
 
@@ -133,19 +133,54 @@
     }
 
     &:nth-last-child(-n + 2) {
-      margin-bottom: 45px;
+      // margin-bottom: 45px;
     }
   }
 }
 
-.overlay-text {
-  @extend .overlay-text;
+// .overlay-text {
+//   @extend .overlay-text;
 
-  .about-button:active & {
-    opacity: 1;
-  }
+//   .about-button:active & {
+//     opacity: 1;
+//   }
 
-  .about-button:focus & {
-    opacity: 1;
-  }
+//   .about-button:focus & {
+//     opacity: 1;
+//   }
+// }
+
+.read-more {
+  // outline: 1px solid red;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.extra-text {
+  display: none;
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+.more {
+  margin-left: 5px;
+}
+
+.less {
+  display: none;
+  margin-left: 5px;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
 }
