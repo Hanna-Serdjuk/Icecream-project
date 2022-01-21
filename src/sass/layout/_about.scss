@@ -158,6 +158,10 @@
 
 .about-content .about-content__text {
   margin: 20px 0px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .extra-text {
