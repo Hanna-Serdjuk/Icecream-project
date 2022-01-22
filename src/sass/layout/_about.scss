@@ -105,22 +105,14 @@
 .about-content__text {
   @include font('DM Sans', 500, 12px, 1.62);
   color: $greyColor;
+  margin-bottom: 20px;
 
   &:first-child {
     color: #000000;
-    // margin-bottom: 35px;
-  }
-
-  &:nth-last-child(-n + 3) {
-    // margin-bottom: 17px;
   }
 
   @media screen and(min-width:$tablet) {
     @include font('DM Sans', 500, 14px, 1.76);
-
-    &:nth-last-child(-n + 2) {
-      // margin-bottom: 60px;
-    }
   }
 
   @media screen and(min-width:$desktop) {
@@ -130,10 +122,6 @@
     &:nth-last-child(-n + 3) {
       font-size: 16px;
       line-height: 1.94;
-    }
-
-    &:nth-last-child(-n + 2) {
-      // margin-bottom: 45px;
     }
   }
 }
@@ -152,17 +140,8 @@
 
 // читать больше
 .read-more {
-  // outline: 1px solid red;
   display: inline-flex;
   cursor: pointer;
-}
-
-.about-content .about-content__text {
-  margin: 20px 0px;
-
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 .extra-text {
@@ -188,24 +167,4 @@
 
 #read-more:checked ~ .read-more .less {
   display: inline;
-}
-
-// на верх
-.about-up {
-  display: block;
-  position: fixed;
-  bottom: 50px;
-  right: 40px;
-  z-index: 10;
-
-  transform: rotate(270deg);
-
-  width: 30px;
-  height: 30px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 50%;
 }
